@@ -1,0 +1,314 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="7d2be6da-b7f1-4983-936b-87a5cd3305d4" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Appel Offre Par Article</ID>
+  <Name>Appel Offre Par Article</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1342" scrolltop="-4339" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="6932" y="20029" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="AppelOffreParArticle" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="4154" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800003a10000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_AppelOffreParArticle" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1342</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4339</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="078dc0a9-a34e-4b06-b213-d4fc1477cb38">
+    <DataSourceViewID>Vue stock</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="a055c322-bb65-42ce-98f0-7c9d3abb0d95">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="51e40a63-1b00-4663-acd3-05d31c528510">
+      <ID>Id</ID>
+      <Name>Id</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>133913</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a20b684a-7484-410b-a70c-2b1c8f61a2fd">
+          <DataType>WChar</DataType>
+          <DataSize>21</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f73e4d96-d8e6-47bd-aa1d-199f5a9e738b">
+            <TableID>dbo_AppelOffreParArticle</TableID>
+            <ColumnID>id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="ddd6c2a7-4348-4599-849c-335bbb826cd5">
+          <AttributeID>Indice Libelle Urgence</AttributeID>
+          <Name>Indice Libelle Urgence</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="88604724-33b3-49b8-99d9-10c88de310b8">
+          <AttributeID>Numero Poste</AttributeID>
+          <Name>Numero Poste</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9a24ece7-b6e9-455a-b113-da32fe462c22">
+          <AttributeID>Precedante Commande</AttributeID>
+          <Name>Precedante Commande</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e6ad14b5-a29e-4dfe-b75d-008b0bf4fe8b">
+          <AttributeID>Article1ere Commande</AttributeID>
+          <Name>Article1ere Commande</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9e68100e-85da-4fd1-9d7b-1831f79272cd">
+          <AttributeID>Controle Designation</AttributeID>
+          <Name>Controle Designation</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="157f8b60-0972-4ee4-a425-30d2f8bdf352">
+          <AttributeID>Code Dessin</AttributeID>
+          <Name>Code Dessin</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b5cf75ac-3d8f-460d-b0b4-72d96efaca2a">
+          <AttributeID>Motif Situation</AttributeID>
+          <Name>Motif Situation</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1ed09a64-33f6-4443-9434-aaf5a8099c20">
+          <AttributeID>Numero PA</AttributeID>
+          <Name>Numero PA</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1d2da8ed-d1af-4af4-adc9-2b604746ce85">
+          <AttributeID>Nomenclature</AttributeID>
+          <Name>Nomenclature</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8b8f17a1-6d61-4cea-a803-747ecd9a1bec">
+          <AttributeID>Code Situation</AttributeID>
+          <Name>Code Situation</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="652652e1-dee6-4d1f-b4e9-d0e7dfea7813">
+          <AttributeID>Numero AO</AttributeID>
+          <Name>Numero AO</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="dea3060f-e26c-4beb-b201-3ac64b035cc0">
+      <ID>Indice Libelle Urgence</ID>
+      <Name>Indice Libelle Urgence</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0e1159fe-553b-45fa-b1d2-fa4b1bed2714">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fb48ed94-fd57-4411-a749-cbd8bb5b53a2">
+            <TableID>dbo_AppelOffreParArticle</TableID>
+            <ColumnID>IndiceLibelleUrgence</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9c804b41-57ec-48cf-9dd4-7271249cf224">
+      <ID>Numero Poste</ID>
+      <Name>Numero Poste</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="107da283-fb55-47d4-bfb7-3c032e984c74">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8d1b6b0b-3a24-4e6b-ac50-de6b1fb0f4b5">
+            <TableID>dbo_AppelOffreParArticle</TableID>
+            <ColumnID>NumeroPoste</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5f342f8a-0c4f-46da-88ef-3a86b13d429f">
+      <ID>Precedante Commande</ID>
+      <Name>Precedante Commande</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a8f416fa-b46c-4a48-afd6-58f3b00914a3">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fde664cf-5264-474b-b98d-ed9024d69e36">
+            <TableID>dbo_AppelOffreParArticle</TableID>
+            <ColumnID>PrecedanteCommande</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8218b273-e74a-4c25-a19a-f16a9fea57c9">
+      <ID>Article1ere Commande</ID>
+      <Name>Article1ere Commande</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c2d4dbb2-0cd2-4c2d-8aeb-4bcb215f0e00">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c7c0207c-e21c-4e9f-98e2-65a5d7ecb130">
+            <TableID>dbo_AppelOffreParArticle</TableID>
+            <ColumnID>Article1ereCommande</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4e9ae004-10e5-48c0-9375-f4d8d49249da">
+      <ID>Controle Designation</ID>
+      <Name>Controle Designation</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ba990b84-1553-4773-a421-4c552af0bfba">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5e55d7df-023f-4fa9-a0fb-4ad8bb220ae6">
+            <TableID>dbo_AppelOffreParArticle</TableID>
+            <ColumnID>ControleDesignation</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="68a579b1-8bb9-497a-a128-b49bb489cee0">
+      <ID>Code Dessin</ID>
+      <Name>Code Dessin</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e11acd7b-ab21-4a12-931e-d4b8393f7906">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c36053e3-7989-4ccc-a60e-3304e5730156">
+            <TableID>dbo_AppelOffreParArticle</TableID>
+            <ColumnID>codeDessin</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4662f131-37b7-4388-9af1-bae4d7ccc6a1">
+      <ID>Motif Situation</ID>
+      <Name>Motif Situation</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="af4d21ee-2ec3-4d06-a5a4-cc06ee4eea9d">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b8cc00eb-42f9-4301-ac86-c906d5416d1a">
+            <TableID>dbo_AppelOffreParArticle</TableID>
+            <ColumnID>MotifSituation</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="74c5b42b-f6dc-44c0-ae20-4d1e23129a3f">
+      <ID>Numero PA</ID>
+      <Name>Numero PA</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="286a8b56-8008-46be-88b9-fca840680e7d">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a8329ce6-066e-446d-a9aa-f66b4c09e8f6">
+            <TableID>dbo_AppelOffreParArticle</TableID>
+            <ColumnID>numeroPA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="194585e0-71ab-4352-800e-61e504759f98">
+      <ID>Nomenclature</ID>
+      <Name>Nomenclature</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="620c41de-6d9c-43f1-b0f0-62c491885f29">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3f149897-ce0a-4799-851f-2d63bd1b0c14">
+            <TableID>dbo_AppelOffreParArticle</TableID>
+            <ColumnID>Nomenclature</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9f30e1ec-5133-43aa-a5c9-bf62a53b859e">
+      <ID>Code Situation</ID>
+      <Name>Code Situation</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="013de5db-2366-427c-8e6c-a781c3826787">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bba441a3-a2bc-467b-bd48-6de6318725d2">
+            <TableID>dbo_AppelOffreParArticle</TableID>
+            <ColumnID>CodeSituation</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b6837a3e-c710-485b-9013-935551b46805">
+      <ID>Numero AO</ID>
+      <Name>Numero AO</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="89b2f6f5-1fab-41b7-8609-70dcb004f8bf">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a05b9777-18dc-44a8-bfdc-ab3f55792485">
+            <TableID>dbo_AppelOffreParArticle</TableID>
+            <ColumnID>numeroAO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+  </Attributes>
+</Dimension>

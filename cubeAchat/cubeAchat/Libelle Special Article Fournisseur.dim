@@ -1,0 +1,259 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="0dab0718-90dd-4311-972e-5ca9531d9a3d" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Libelle Special Article Fournisseur</ID>
+  <Name>Libelle Special Article Fournisseur</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1607" scrolltop="-7514" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="6932" y="20029" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="LibelleSpecialArticleFournisseur" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3678" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800005e0e000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_LibelleSpecialArticleFournisseur" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1607</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-7514</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="ee7fcc5a-93df-4928-8e2e-0b7d2ada6080">
+    <DataSourceViewID>Vue stock</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="28a1fd1a-edf0-4863-a68c-3836e51ac5e5">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="6a45e1ae-29f4-4c7b-836c-f22907392d51">
+      <ID>Id</ID>
+      <Name>Id</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>4915</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d68bbd8e-ac3b-429c-965b-76cc5e589bd6">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ba33521e-d854-4d93-b446-acff17131a28">
+            <TableID>dbo_LibelleSpecialArticleFournisseur</TableID>
+            <ColumnID>id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="e339a005-e66c-4d81-adc3-764150b52b3f">
+          <AttributeID>Code Fournisseur</AttributeID>
+          <Name>Code Fournisseur</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e35c097e-9aca-46ce-bca6-5f716f32f73b">
+          <AttributeID>Libelle Marque</AttributeID>
+          <Name>Libelle Marque</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a6842e6e-a477-402e-9441-f81f38d03167">
+          <AttributeID>Coefficient Qualite</AttributeID>
+          <Name>Coefficient Qualite</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8d5c66d8-d178-4f13-afe3-3c5386f55439">
+          <AttributeID>Etablissement</AttributeID>
+          <Name>Etablissement</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4cb62e36-6920-42cb-af60-32a999db495e">
+          <AttributeID>Reference Note</AttributeID>
+          <Name>Reference Note</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="53a52ad4-75df-46cd-a91c-607ebd1e2a07">
+          <AttributeID>Date Reference</AttributeID>
+          <Name>Date Reference</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="66f34bfa-465b-4c95-8511-28e84ad66892">
+          <AttributeID>Numero Modification</AttributeID>
+          <Name>Numero Modification</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2f591fb2-dc44-4de4-bcd3-a3bfa05133b6">
+          <AttributeID>Nomenclature</AttributeID>
+          <Name>Nomenclature</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e111aac9-fd97-460c-8815-90ac87057c92">
+      <ID>Code Fournisseur</ID>
+      <Name>Code Fournisseur</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="56366bf6-fb71-4403-9189-c253ceb070de">
+          <DataType>WChar</DataType>
+          <DataSize>7</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ad212d61-c3e1-43e0-b8a4-d57ba78f2c7c">
+            <TableID>dbo_LibelleSpecialArticleFournisseur</TableID>
+            <ColumnID>CodeFournisseur</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8947dc28-f107-4154-b1bf-7bcb0d63f1ba">
+      <ID>Libelle Marque</ID>
+      <Name>Libelle Marque</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c5d9cc9a-3ef9-4d55-8f7e-3cac5f6f7506">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b0345c35-4d44-4fa8-a99b-9443fe7927be">
+            <TableID>dbo_LibelleSpecialArticleFournisseur</TableID>
+            <ColumnID>LibelleMarque</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f864ddbe-8fb1-4ed1-9799-99b624b4b8ad">
+      <ID>Coefficient Qualite</ID>
+      <Name>Coefficient Qualite</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7e16bb66-45ac-49e0-a180-22ad811df155">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="beabc6b1-1e66-4bad-acea-edbb954ecf37">
+            <TableID>dbo_LibelleSpecialArticleFournisseur</TableID>
+            <ColumnID>CoefficientQualite</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="45e941cd-c89c-4f80-8d3b-44b6d264bcce">
+      <ID>Etablissement</ID>
+      <Name>Etablissement</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5df10975-b3f1-4a05-a990-e9ed02a46de2">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3fee73aa-13f7-416a-bf8d-a5d4d46f314f">
+            <TableID>dbo_LibelleSpecialArticleFournisseur</TableID>
+            <ColumnID>Etablissement</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a715b436-8e73-4452-b2da-f4f8f91f0915">
+      <ID>Reference Note</ID>
+      <Name>Reference Note</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4e289a7f-b022-42a4-83c6-89daabd0ab0e">
+          <DataType>WChar</DataType>
+          <DataSize>8</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1d7971c7-5062-43dc-8067-9074312577bd">
+            <TableID>dbo_LibelleSpecialArticleFournisseur</TableID>
+            <ColumnID>ReferenceNote</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6b6d4236-1ee8-4e58-9e8c-cfd2a6dddad0">
+      <ID>Date Reference</ID>
+      <Name>Date Reference</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8b11ace4-2833-4d35-a2c3-ffc992c4763d">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2f5c4535-4ce9-47b1-907b-3aeea5f8413b">
+            <TableID>dbo_LibelleSpecialArticleFournisseur</TableID>
+            <ColumnID>DateReference</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d75b2f74-d259-4e45-93da-6e305c8ca131">
+      <ID>Numero Modification</ID>
+      <Name>Numero Modification</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="914e6607-36ac-4684-b966-1c4f69293f8d">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="34c8f7b6-8a53-4a58-8237-d8ec0960e72e">
+            <TableID>dbo_LibelleSpecialArticleFournisseur</TableID>
+            <ColumnID>NumeroModification</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d79826f6-c703-4672-9ea5-5fea1bd2de20">
+      <ID>Nomenclature</ID>
+      <Name>Nomenclature</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4aaeaf5f-d3f9-4fc7-af34-09fba8e671fe">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dc54c105-f2a9-4f58-b9d1-565f7783b8ee">
+            <TableID>dbo_LibelleSpecialArticleFournisseur</TableID>
+            <ColumnID>Nomenclature</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+  </Attributes>
+</Dimension>

@@ -1,0 +1,678 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="090809c7-ab5f-469c-b22f-48779cabd57e" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Commande Article</ID>
+  <Name>Commande Article</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1236" scrolltop="-4339" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="6932" y="20029" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="CommandeArticle" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="4948" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800005413000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_CommandeArticle" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1236</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4339</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="c68f4b0f-5723-4e7e-92d3-9276420c0938">
+    <DataSourceViewID>Vue stock</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="ec59a56a-3106-467a-9b0e-a27305fa5c0e">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="557cb299-ceae-4a95-8e2e-fe72168ec039">
+      <ID>Id</ID>
+      <Name>Id</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="dc384e1b-679b-458f-8bd8-501bb6856967">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0c524251-9004-4b08-a674-9ef705d53028">
+            <TableID>dbo_CommandeArticle</TableID>
+            <ColumnID>id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="8682ff9d-923f-4c97-8a00-92bee0816fd9">
+          <AttributeID>Numero OL</AttributeID>
+          <Name>Numero OL</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6989e039-2aea-4b0a-9166-ae3f46d3c5b3">
+          <AttributeID>Code Situation</AttributeID>
+          <Name>Code Situation</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8a97b0a5-b63f-440f-aaeb-984a7f8cd6d0">
+          <AttributeID>Motif Situation</AttributeID>
+          <Name>Motif Situation</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="36c728d3-b21a-4890-8bb9-6eaf7ff8afdd">
+          <AttributeID>Numero Variante</AttributeID>
+          <Name>Numero Variante</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d24acaf8-26b7-4ba5-b528-51df6fbfd9db">
+          <AttributeID>Numero Poste</AttributeID>
+          <Name>Numero Poste</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1a350fe2-5668-471e-939c-37c42e07fcb9">
+          <AttributeID>Motif Avis Technique</AttributeID>
+          <Name>Motif Avis Technique</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="12cb2b36-cdcd-4a51-a1b1-b8c729ae0311">
+          <AttributeID>Etablissement Avis Technique</AttributeID>
+          <Name>Etablissement Avis Technique</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="afa1f2dc-b255-4d76-bdf7-07f3e6d020be">
+          <AttributeID>Motif Reception Echantillon</AttributeID>
+          <Name>Motif Reception Echantillon</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5ed4590f-c05c-4782-bab2-a9b0e1d8b56f">
+          <AttributeID>Origine Delai</AttributeID>
+          <Name>Origine Delai</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="90522864-2b4b-4bb2-b4b4-ff9fdbc107ac">
+          <AttributeID>Livraison Echelonne</AttributeID>
+          <Name>Livraison Echelonne</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9fb53eac-f136-4ac7-926f-d76ba0530d65">
+          <AttributeID>Code Grantie</AttributeID>
+          <Name>Code Grantie</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6593327b-2f3a-47f1-bb72-715194d8b720">
+          <AttributeID>Code Existance Accessoire</AttributeID>
+          <Name>Code Existance Accessoire</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e679c2a3-4891-4ce2-b115-61c9acf11bd6">
+          <AttributeID>Unite Achat</AttributeID>
+          <Name>Unite Achat</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="12fc4fbc-44e9-46fb-9427-33ad502aef9a">
+          <AttributeID>Rapport UA UD</AttributeID>
+          <Name>Rapport UA UD</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e6e661f6-3718-4dfd-9212-ce124f4ac357">
+          <AttributeID>Code Penalite</AttributeID>
+          <Name>Code Penalite</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="77127cb4-1eeb-4055-9ed4-21f6ccb9909a">
+          <AttributeID>Decision Penalite</AttributeID>
+          <Name>Decision Penalite</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="dee541c0-1c1a-45b4-9aaa-9ea9b21d1d2f">
+          <AttributeID>Code Edition Mise En Demeure</AttributeID>
+          <Name>Code Edition Mise En Demeure</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ff8d96dc-37d6-410b-bfd0-3837b31a35d2">
+          <AttributeID>Numero Commande Rappel</AttributeID>
+          <Name>Numero Commande Rappel</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5c91877c-ce20-4a36-8cbe-81b4de9071d5">
+          <AttributeID>Code Lettre1</AttributeID>
+          <Name>Code Lettre1</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b178af89-1b9b-4638-9f55-8289ff8ce285">
+          <AttributeID>Code Lettre2</AttributeID>
+          <Name>Code Lettre2</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="235a1e56-732b-4a00-b2fe-2d3121e5db49">
+          <AttributeID>Code Lettre3</AttributeID>
+          <Name>Code Lettre3</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="228eed08-30f0-44ff-b368-bff7f025fba5">
+          <AttributeID>Code Lettre4</AttributeID>
+          <Name>Code Lettre4</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="882d0310-92be-467a-94e3-56939ac65376">
+          <AttributeID>Taux TVA</AttributeID>
+          <Name>Taux TVA</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="87316b38-cd26-4aa8-be4b-8502b9264759">
+          <AttributeID>Formule Revision Prix</AttributeID>
+          <Name>Formule Revision Prix</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c51f1d95-148c-4f44-9e0b-d736b6878cd0">
+          <AttributeID>Code Condition Remise</AttributeID>
+          <Name>Code Condition Remise</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a60b8cbe-7135-43ed-9de2-e0a94b33b16c">
+          <AttributeID>Participation Outillage</AttributeID>
+          <Name>Participation Outillage</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="22e62af3-8674-40d1-886c-fd48726d353f">
+          <AttributeID>Prix Ferme Revisable</AttributeID>
+          <Name>Prix Ferme Revisable</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="54bc1291-59dc-4fa1-aff7-f9d5fb0d7c77">
+          <AttributeID>Numero AO Reception</AttributeID>
+          <Name>Numero AO Reception</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="cb692cd5-76bc-4c08-b532-7d122e6c6843">
+          <AttributeID>Nomenclature</AttributeID>
+          <Name>Nomenclature</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c6a8980f-093c-4b93-b58e-734cf5f5c777">
+          <AttributeID>Numero Commande</AttributeID>
+          <Name>Numero Commande</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="76235b20-03f8-40bd-b2cc-698eb7a165ff">
+      <ID>Numero OL</ID>
+      <Name>Numero OL</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4d5def24-d55e-436f-b846-ba6be7c8f28a">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="80a584b6-2bba-426c-bb2a-700b967f9945">
+            <TableID>dbo_CommandeArticle</TableID>
+            <ColumnID>numeroOL</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9042bd1e-80ce-469a-b88b-ea85d4bd482c">
+      <ID>Code Situation</ID>
+      <Name>Code Situation</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="74055774-e2bc-406e-8236-5e4700bdd827">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e2cd48e3-10fa-4842-8cb8-3414ff43d197">
+            <TableID>dbo_CommandeArticle</TableID>
+            <ColumnID>codeSituation</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ea57b580-3479-4bfa-ac29-07c5cdff5137">
+      <ID>Motif Situation</ID>
+      <Name>Motif Situation</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f7a4d797-2894-453d-a663-89b4fdf4b5e9">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e3078cde-4868-4587-9baa-c2415d9b994f">
+            <TableID>dbo_CommandeArticle</TableID>
+            <ColumnID>MotifSituation</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f9119c8c-4b82-40b8-905c-af06c64955f8">
+      <ID>Numero Variante</ID>
+      <Name>Numero Variante</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a2417f7e-46dc-47a5-9277-83fc7b343d99">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a217a68d-8ed2-4f9c-afe8-f27fe33f1ce1">
+            <TableID>dbo_CommandeArticle</TableID>
+            <ColumnID>numeroVariante</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6c9ba42f-a8fb-49c0-99d4-bc747c5166e0">
+      <ID>Numero Poste</ID>
+      <Name>Numero Poste</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ff6730c8-2bff-4676-8304-66b763ab0e77">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fa4d2608-c2a3-4c2a-843a-aa74f3f1acee">
+            <TableID>dbo_CommandeArticle</TableID>
+            <ColumnID>numeroPoste</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f8168b16-7ef1-4dfb-b536-886070a1e03f">
+      <ID>Motif Avis Technique</ID>
+      <Name>Motif Avis Technique</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="171c302f-f6ad-4a20-9c80-b8e02aef98e9">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a44c5b9f-eb5c-4a2b-8e4b-3e9c5c7821a3">
+            <TableID>dbo_CommandeArticle</TableID>
+            <ColumnID>MotifAvisTechnique</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="616487fb-3be0-4387-b610-5f98bfd945d0">
+      <ID>Etablissement Avis Technique</ID>
+      <Name>Etablissement Avis Technique</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c4565319-f70e-4302-883a-e7a907f4fd89">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0f4d74b2-ae5e-4a9c-9f37-51f4dcc2afe8">
+            <TableID>dbo_CommandeArticle</TableID>
+            <ColumnID>EtablissementAvisTechnique</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ef9a975d-8382-4c3d-b471-24ba3e24c895">
+      <ID>Motif Reception Echantillon</ID>
+      <Name>Motif Reception Echantillon</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7e682c7b-1dc1-41e4-ae23-61073be1bb53">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bec650ba-0211-4192-9ba3-b7fe950c6ed4">
+            <TableID>dbo_CommandeArticle</TableID>
+            <ColumnID>motifReceptionEchantillon</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="312b1a8b-fae3-47fc-b362-8229a1fc4097">
+      <ID>Origine Delai</ID>
+      <Name>Origine Delai</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="675a9a8e-3b74-4f73-8092-1f81e17b7b2b">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1a3aa75b-24db-41f7-b949-53638e47cc5e">
+            <TableID>dbo_CommandeArticle</TableID>
+            <ColumnID>origineDelai</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="610035b4-125c-4564-867c-d4139394e9ef">
+      <ID>Livraison Echelonne</ID>
+      <Name>Livraison Echelonne</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="de2d132e-51c4-43dc-974f-a76d1d624475">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e2a76122-972d-46c0-ad44-d7457e0c990c">
+            <TableID>dbo_CommandeArticle</TableID>
+            <ColumnID>livraisonEchelonne</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8f981d4b-2538-4460-a1ce-5431bfe12978">
+      <ID>Code Grantie</ID>
+      <Name>Code Grantie</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d5fc150d-2fcf-4e08-806e-b8e32004b697">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8a6a4004-016e-44ab-b69b-977a725485c5">
+            <TableID>dbo_CommandeArticle</TableID>
+            <ColumnID>codeGrantie</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="03d27ee9-e548-46fd-8d87-f8e0627f6204">
+      <ID>Code Existance Accessoire</ID>
+      <Name>Code Existance Accessoire</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0f413aa0-2096-4183-b974-a7396fea8b6e">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5bed531e-6be5-47db-ac93-455b0217a293">
+            <TableID>dbo_CommandeArticle</TableID>
+            <ColumnID>codeExistanceAccessoire</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5e906a2e-95cf-4ea9-af6c-0d94d4009283">
+      <ID>Unite Achat</ID>
+      <Name>Unite Achat</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9779d372-b435-4493-b023-ac7ea220ffd3">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="44cfd23b-8437-42db-a254-17128b66f8ff">
+            <TableID>dbo_CommandeArticle</TableID>
+            <ColumnID>uniteAchat</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="727090e6-54f8-4afe-b5c8-7422a0e07502">
+      <ID>Rapport UA UD</ID>
+      <Name>Rapport UA UD</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c19f74dc-6086-4afd-a9fd-59b23302805d">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c7611275-2487-42a3-98da-8e3988dfaacb">
+            <TableID>dbo_CommandeArticle</TableID>
+            <ColumnID>rapportUA_UD</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="968046af-a831-48e2-8368-d8ec212c721e">
+      <ID>Code Penalite</ID>
+      <Name>Code Penalite</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ecc90b39-e789-4bb9-b476-b7c48672f0ca">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="abfbc8dc-d1e9-4b6e-8382-8cd77ba69af0">
+            <TableID>dbo_CommandeArticle</TableID>
+            <ColumnID>codePenalite</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b9eafe10-19f8-4917-8e48-8c92f107956a">
+      <ID>Decision Penalite</ID>
+      <Name>Decision Penalite</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a1b8e126-00b8-45d9-b9c9-899406940725">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f06dafde-4da7-494d-b4a1-cb65c0f6055b">
+            <TableID>dbo_CommandeArticle</TableID>
+            <ColumnID>DecisionPenalite</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8ace1f48-257a-4629-94f6-6c909f828ddf">
+      <ID>Code Edition Mise En Demeure</ID>
+      <Name>Code Edition Mise En Demeure</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="828ef8d3-7a9c-4a70-9f47-22549f2a35bf">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3af9827f-1a56-42c0-902d-837a76770deb">
+            <TableID>dbo_CommandeArticle</TableID>
+            <ColumnID>codeEditionMiseEnDemeure</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="75408085-3a46-4b36-b12d-6959b25f7c47">
+      <ID>Numero Commande Rappel</ID>
+      <Name>Numero Commande Rappel</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d2dca549-341a-4651-bd62-a12fdc39dee3">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0320253d-3dc5-4aa5-9bc8-238bfb9fdf8d">
+            <TableID>dbo_CommandeArticle</TableID>
+            <ColumnID>numeroCommandeRappel</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0a822ae5-dc4c-4bfb-9a82-69c43e45dd7a">
+      <ID>Code Lettre1</ID>
+      <Name>Code Lettre1</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="70629d45-8065-465d-b6cb-875e12bb7061">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0cd64bce-7b5f-4b07-b7e1-0e9744bc0510">
+            <TableID>dbo_CommandeArticle</TableID>
+            <ColumnID>codeLettre1</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2ba2a90c-1794-47e4-855f-7df5dbb635b7">
+      <ID>Code Lettre2</ID>
+      <Name>Code Lettre2</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0c3fddfd-a131-4f02-ad32-b5808fe556e9">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5f129421-433d-4ee4-87a6-c0a230e36add">
+            <TableID>dbo_CommandeArticle</TableID>
+            <ColumnID>codeLettre2</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="60b9332f-4b90-4806-b26f-ae41ea81493c">
+      <ID>Code Lettre3</ID>
+      <Name>Code Lettre3</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="aca6e73e-395c-416f-941f-fb36f8ded07e">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3ea61775-fa53-418a-a839-96cfe3ab9c2a">
+            <TableID>dbo_CommandeArticle</TableID>
+            <ColumnID>codeLettre3</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d21c44a4-fc25-4580-8aab-7c08361367da">
+      <ID>Code Lettre4</ID>
+      <Name>Code Lettre4</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5d3f7be2-c332-43b0-bfb7-fa4e15bb0f95">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c6365fec-2efd-4eb0-840c-8a1dc97b4394">
+            <TableID>dbo_CommandeArticle</TableID>
+            <ColumnID>codeLettre4</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="430983f9-382f-4826-a0ba-5b2b3414290f">
+      <ID>Taux TVA</ID>
+      <Name>Taux TVA</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="53b494d3-bc7b-419d-bb01-f36de5279e3c">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7f3dffe0-11e1-44a3-8256-79686e8a15d7">
+            <TableID>dbo_CommandeArticle</TableID>
+            <ColumnID>TauxTVA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c062c84c-dc44-47cb-867f-3893d91239b9">
+      <ID>Formule Revision Prix</ID>
+      <Name>Formule Revision Prix</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="28590391-ffb3-41b8-af65-63075da32428">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="72b35606-2409-4994-b379-c21dc227b09e">
+            <TableID>dbo_CommandeArticle</TableID>
+            <ColumnID>FormuleRevisionPrix</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="feafcf9b-436b-4374-a482-68d7a3321645">
+      <ID>Code Condition Remise</ID>
+      <Name>Code Condition Remise</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a7d717e0-1f7a-4448-ac78-0cc70b6f900d">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3a795c82-a0a2-428c-ad68-c78dad174970">
+            <TableID>dbo_CommandeArticle</TableID>
+            <ColumnID>CodeConditionRemise</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="470555ff-99d4-4fa2-ae6f-3e605c10ad4b">
+      <ID>Participation Outillage</ID>
+      <Name>Participation Outillage</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="aa911842-908d-482c-812e-094310d9b5ff">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="59b90baa-fa93-498b-a1f0-d6d8e2c50f9c">
+            <TableID>dbo_CommandeArticle</TableID>
+            <ColumnID>ParticipationOutillage</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="33bd5e77-d231-4166-a9f4-7e3be0ce6f00">
+      <ID>Prix Ferme Revisable</ID>
+      <Name>Prix Ferme Revisable</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3bda96a6-af3a-4117-b236-60b969ddae86">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4576e378-9875-406b-882f-e1fc2b28439c">
+            <TableID>dbo_CommandeArticle</TableID>
+            <ColumnID>PrixFermeRevisable</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="eff15a51-ff06-4032-9e31-dd7a29a528d5">
+      <ID>Numero AO Reception</ID>
+      <Name>Numero AO Reception</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5470d489-c3a4-4662-a5a2-91e6e57f2061">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5b1108df-91ae-4880-b2e7-e584656dff9a">
+            <TableID>dbo_CommandeArticle</TableID>
+            <ColumnID>numeroAOReception</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="56deebad-5dc1-4fc1-9251-e05db64f1b54">
+      <ID>Nomenclature</ID>
+      <Name>Nomenclature</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="09d50052-da7a-4a41-9f9b-88f2db63c357">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c1225221-e6ee-4187-81d8-a29e84e16a71">
+            <TableID>dbo_CommandeArticle</TableID>
+            <ColumnID>nomenclature</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1ecfb80d-d537-4e61-9e77-5950ef8019eb">
+      <ID>Numero Commande</ID>
+      <Name>Numero Commande</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="698232b1-8813-4db1-966f-364ed26d9ce9">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="477522fc-3a70-433e-aa10-9ff04bd3f9da">
+            <TableID>dbo_CommandeArticle</TableID>
+            <ColumnID>numeroCommande</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+  </Attributes>
+</Dimension>

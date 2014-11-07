@@ -1,0 +1,258 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="cbfbfcff-5422-4abd-8a18-ab7e0b7f6af0" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Avoir</ID>
+  <Name>Avoir</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1144" scrolltop="-7514" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="6932" y="20029" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Avoir" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4604" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000fc11000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Avoir" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1144</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-7514</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="fa731e33-2ba4-4d6e-85bc-e85281834679">
+    <DataSourceViewID>Vue stock</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="0314df22-6a40-4cd5-bd5e-a5ab302247be">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="190ce363-634c-402b-930e-584bbba07076">
+      <ID>Id Avoir</ID>
+      <Name>Id Avoir</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>1120</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e50cea7f-9c45-4d70-9207-cd28e815c3b2">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ecbb3174-d734-4423-a899-8fcf029a6c64">
+            <TableID>dbo_Avoir</TableID>
+            <ColumnID>idAvoir</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="414becd9-5087-42a2-83c5-0935288047f5">
+          <AttributeID>Numero Commande</AttributeID>
+          <Name>Numero Commande</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9fd18871-3776-404c-a085-59b823798f98">
+          <AttributeID>Numero Reception Valorisee</AttributeID>
+          <Name>Numero Reception Valorisee</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c2d7b4eb-7659-445d-a989-19c8d13c9044">
+          <AttributeID>Code Situation Facture</AttributeID>
+          <Name>Code Situation Facture</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9eee1f68-3423-4e89-aa16-30f878b1f246">
+          <AttributeID>Matricule Utilisateur</AttributeID>
+          <Name>Matricule Utilisateur</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="953fe47e-8874-4271-a73d-37ac92d7a411">
+          <AttributeID>Numero FM</AttributeID>
+          <Name>Numero FM</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="428e52c1-e1cc-44a4-8a05-5400d7b2734d">
+          <AttributeID>Numero Facture</AttributeID>
+          <Name>Numero Facture</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4d59e263-96d5-4593-9598-24ea8080c4a6">
+          <AttributeID>Code Devise</AttributeID>
+          <Name>Code Devise</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f8c001cc-f5ab-43ca-9a99-ec15e6fe0eb1">
+          <AttributeID>Code Benificiaire</AttributeID>
+          <Name>Code Benificiaire</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9d898f58-2f6f-485a-9ec1-e9cf5c0e3815">
+      <ID>Numero Commande</ID>
+      <Name>Numero Commande</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f6c25461-9704-459a-967b-082121f8b49d">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a2c3bd42-89dc-4b46-b740-a29e3b0bf73a">
+            <TableID>dbo_Avoir</TableID>
+            <ColumnID>NumeroCommande</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fb9773a6-82d0-4f78-9917-c967287e6cba">
+      <ID>Numero Reception Valorisee</ID>
+      <Name>Numero Reception Valorisee</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5ddacd49-3287-47e2-93e0-353b10f0053a">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ea626753-440e-4d69-8cc0-6424cb9db3df">
+            <TableID>dbo_Avoir</TableID>
+            <ColumnID>NumeroReceptionValorisee</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="55e0e932-9e8e-4ac9-88fd-dd5574f821ad">
+      <ID>Code Situation Facture</ID>
+      <Name>Code Situation Facture</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ce2c2f05-9711-4e11-8e6d-91b3f2629398">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1855d7dd-02b8-4b08-9ab7-4a80ddcda60b">
+            <TableID>dbo_Avoir</TableID>
+            <ColumnID>CodeSituationFacture</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7e370107-e87f-4473-9be9-f0cc18197cab">
+      <ID>Matricule Utilisateur</ID>
+      <Name>Matricule Utilisateur</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8562650d-6a63-41da-ad15-508478b19a82">
+          <DataType>WChar</DataType>
+          <DataSize>6</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dacfcffc-31f6-442a-aae3-5f92a2d330d4">
+            <TableID>dbo_Avoir</TableID>
+            <ColumnID>MatriculeUtilisateur</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="cbf7dff6-ae65-42a9-adef-842838a95a09">
+      <ID>Numero FM</ID>
+      <Name>Numero FM</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="97f9ecf0-b115-4622-b52c-5219a502f3ec">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5687385f-1cff-4a95-b690-69fcb66fc3ab">
+            <TableID>dbo_Avoir</TableID>
+            <ColumnID>NumeroFM</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0ea6b4d4-7288-420b-b4db-14a88baa0589">
+      <ID>Numero Facture</ID>
+      <Name>Numero Facture</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8b42949f-98fe-4fec-a0ff-69e794271711">
+          <DataType>WChar</DataType>
+          <DataSize>6</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fc8f0dde-80ff-45ef-bbb9-dff5455b1ef8">
+            <TableID>dbo_Avoir</TableID>
+            <ColumnID>NumeroFacture</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5fe799b3-3d8c-4ee1-80e0-8ac810abb8b2">
+      <ID>Code Devise</ID>
+      <Name>Code Devise</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cfc5b827-4c82-45de-91f0-df1771dc9aa3">
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b1fa5fe6-7d2d-4d2c-94ab-87c9ae3d9b23">
+            <TableID>dbo_Avoir</TableID>
+            <ColumnID>codeDevise</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5c195e92-1d1f-4595-9a36-697cb3b74fee">
+      <ID>Code Benificiaire</ID>
+      <Name>Code Benificiaire</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="033ffff1-e514-48a9-bb19-eea184966ead">
+          <DataType>WChar</DataType>
+          <DataSize>7</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="55902cc3-01b7-4576-99a6-c79b921d6ea7">
+            <TableID>dbo_Avoir</TableID>
+            <ColumnID>CodeBenificiaire</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+  </Attributes>
+</Dimension>

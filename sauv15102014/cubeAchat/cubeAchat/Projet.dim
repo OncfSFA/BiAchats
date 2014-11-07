@@ -1,0 +1,216 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9f7d6368-320a-4b85-877d-cba6c79c3a5b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Projet</ID>
+  <Name>Projet</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1555" scrolltop="-4339" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="6879" y="13679" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Projet" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="4577" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000e111000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Projet" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1555</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4339</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="39a152ae-f2f8-44f3-bef7-07ca198a0ed5">
+    <DataSourceViewID>Vue stock</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="946e944e-dd54-4bd6-95ab-c2c457805643">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="a55908aa-c096-4a5e-8c7d-bdd13c4d207d">
+      <ID>Numero Entier Projet</ID>
+      <Name>Numero Entier Projet</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>1467</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="62aff47e-dfea-459d-aace-e141e94344cb">
+          <DataType>WChar</DataType>
+          <DataSize>7</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="805f8273-4c71-4f6b-b03c-63f8c26c5c07">
+            <TableID>dbo_Projet</TableID>
+            <ColumnID>numeroEntierProjet</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="0f86c1f6-8d35-4ac0-a285-2057ee0b22c3">
+          <AttributeID>Code Projet</AttributeID>
+          <Name>Code Projet</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="378fc7c0-c596-4f01-b9c8-9de8f50d334f">
+          <AttributeID>Numero Projet</AttributeID>
+          <Name>Numero Projet</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c6833a33-c473-4003-913b-8ed0fdf19802">
+          <AttributeID>Imputation Projet</AttributeID>
+          <Name>Imputation Projet</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b44772f5-ce7a-4d49-a48c-69ca0bf6d9ab">
+          <AttributeID>Libelle1</AttributeID>
+          <Name>Libelle1</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1a86ac84-1521-446d-b1be-7c4332ef792c">
+          <AttributeID>Libelle2</AttributeID>
+          <Name>Libelle2</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="bcd31b7a-4c66-44be-b191-367c544ce1c8">
+          <AttributeID>Libelle3</AttributeID>
+          <Name>Libelle3</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="3eccf44b-931e-494e-8dd9-0fe2e3a4f2c4">
+      <ID>Code Projet</ID>
+      <Name>Code Projet</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0dba3f0e-4d59-4135-ab00-6a9aca7547dc">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a0f549d9-6683-4e19-a837-61f857485a08">
+            <TableID>dbo_Projet</TableID>
+            <ColumnID>codeProjet</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="3c36958c-ffc6-471b-8336-43681be45808">
+      <ID>Numero Projet</ID>
+      <Name>Numero Projet</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7d61157c-89a3-45df-be25-84fed07bc8eb">
+          <DataType>WChar</DataType>
+          <DataSize>5</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="20e3a3c4-2253-4c08-9282-e71602066aa5">
+            <TableID>dbo_Projet</TableID>
+            <ColumnID>numeroProjet</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="6b59a661-9b8c-42e9-ae79-b235f27de289">
+      <ID>Imputation Projet</ID>
+      <Name>Imputation Projet</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="17512218-cc79-48bd-8fbc-50393ce17deb">
+          <DataType>WChar</DataType>
+          <DataSize>9</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ed90b5af-1690-4f1b-922f-0c9712adee87">
+            <TableID>dbo_Projet</TableID>
+            <ColumnID>imputationProjet</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="952c730d-5f2c-43dc-8f0f-291d6ba66fd0">
+      <ID>Libelle1</ID>
+      <Name>Libelle1</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9093c3d6-d9a6-4656-acfe-ad54d4ecae72">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7c10c6e5-bd84-4d01-aa77-592dd522634b">
+            <TableID>dbo_Projet</TableID>
+            <ColumnID>libelle1</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="473a5b7c-9264-4472-9851-aaae50d6c750">
+      <ID>Libelle2</ID>
+      <Name>Libelle2</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9a41cec9-e905-4fe7-beb7-3744198ae7b0">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="55ff53bd-1df2-4092-b689-937d022beaab">
+            <TableID>dbo_Projet</TableID>
+            <ColumnID>libelle2</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="656dd4ad-9786-4a1b-befd-8a7a8fafa983">
+      <ID>Libelle3</ID>
+      <Name>Libelle3</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7d35a755-5733-45db-8656-0e7bd18d2430">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7c852390-f719-4d89-9baf-0d749728a492">
+            <TableID>dbo_Projet</TableID>
+            <ColumnID>libelle3</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+  </Attributes>
+</Dimension>

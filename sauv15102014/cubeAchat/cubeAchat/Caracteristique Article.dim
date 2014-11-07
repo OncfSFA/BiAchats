@@ -1,0 +1,466 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="34372c4f-c78d-4f62-b9b4-de2ca7e30f42" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Caracteristique Article</ID>
+  <Name>Caracteristique Article</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="09525993-ab91-4fd3-af8f-8e3fc426ee9b">
+    <DataSourceViewID>Vue stock</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="a3247680-8496-4e8b-b7c0-1ed97c99b6e1">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="3f1f0ec2-08f7-4d80-9fd1-8a334bf633a5">
+      <ID>Id</ID>
+      <Name>Id</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="02200de7-6c8d-4441-ba5a-3d8e55f8a263">
+          <NullProcessing>UnknownMember</NullProcessing>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1397c50a-df1e-48a5-8251-e2ca4a2380cc">
+            <TableID>dbo_CaracteristiqueArticle</TableID>
+            <ColumnID>id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="bf7a09dd-bc11-4a4e-8a7a-89f6a07e3423">
+          <AttributeID>Code Article Realise Maroc</AttributeID>
+          <Name>Code Article Realise Maroc</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="768be5a8-9507-4c48-9e6b-3d7c0aac2cfd">
+          <AttributeID>Libelle Article Realise Maroc</AttributeID>
+          <Name>Libelle Article Realise Maroc</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a62bb9ea-508a-4b59-b0af-b6221928b74b">
+          <AttributeID>Code Module Fonderie</AttributeID>
+          <Name>Code Module Fonderie</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="fc068ac1-5187-444c-82d4-500261df7473">
+          <AttributeID>Libelle Module Fonderie</AttributeID>
+          <Name>Libelle Module Fonderie</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="afd2c2e8-d13e-4425-83f3-1d65c84cb9cb">
+          <AttributeID>Code Depot Echantillon</AttributeID>
+          <Name>Code Depot Echantillon</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6ccd3227-50ae-4c08-8710-59d2cea790d0">
+          <AttributeID>Libelle Depot Echantillon</AttributeID>
+          <Name>Libelle Depot Echantillon</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="24c824fc-76a1-418f-a1be-7112d0601e68">
+          <AttributeID>Code Article Echangeable</AttributeID>
+          <Name>Code Article Echangeable</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="32809bf0-a703-455d-85d4-9171c50cae38">
+          <AttributeID>Libelle Article Echangeable</AttributeID>
+          <Name>Libelle Article Echangeable</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="96d24023-0c35-4e60-a92e-0fa38e6e1b87">
+          <AttributeID>Code Piece Securite</AttributeID>
+          <Name>Code Piece Securite</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8a0ba343-5e67-4331-9e69-3201f0743ba7">
+          <AttributeID>Libelle Piece Securite</AttributeID>
+          <Name>Libelle Piece Securite</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7d42250f-42db-41da-ae44-37e199d7e759">
+          <AttributeID>Code Controle Usine</AttributeID>
+          <Name>Code Controle Usine</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="23185bbb-2126-4b9b-bd0b-8f6194ab618c">
+          <AttributeID>Libelle Controle Usine</AttributeID>
+          <Name>Libelle Controle Usine</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e8b78a80-e060-4fae-8ec2-a0917253bf23">
+          <AttributeID>Code Essai Marque</AttributeID>
+          <Name>Code Essai Marque</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6f2b19df-7f25-48a4-a930-01ed4c50f432">
+          <AttributeID>Libelle Essai Marque</AttributeID>
+          <Name>Libelle Essai Marque</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b61380be-8651-42ef-b2cd-f077b9ef7e55">
+          <AttributeID>Code Conditionnement</AttributeID>
+          <Name>Code Conditionnement</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9bd11eda-efd1-4e03-916c-b70b7c48ea6f">
+          <AttributeID>Libelle Conditionnement</AttributeID>
+          <Name>Libelle Conditionnement</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2461a419-7413-4257-9c3b-b20a2b87d229">
+          <AttributeID>Code Stock Equipement</AttributeID>
+          <Name>Code Stock Equipement</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4efe4edb-e531-4083-9c89-644cf590af41">
+          <AttributeID>Libelle Stock Equipement</AttributeID>
+          <Name>Libelle Stock Equipement</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e587e326-aada-4d2a-92b8-a7b32afb3d92">
+          <AttributeID>Code Mutation</AttributeID>
+          <Name>Code Mutation</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="92c7442c-a771-4387-8453-010334e7d3b5">
+          <AttributeID>Libelle Mutation</AttributeID>
+          <Name>Libelle Mutation</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d116aaf6-04d0-489a-9834-1bc2e19e8b67">
+      <ID>Code Article Realise Maroc</ID>
+      <Name>Code Article Realise Maroc</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="19f3a662-831f-40e9-9203-c9705ddc6dbc">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cd2183ce-1afb-4765-8635-b02ad71083a6">
+            <TableID>dbo_CaracteristiqueArticle</TableID>
+            <ColumnID>CodeArticleRealiseMaroc</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d9ac34d5-b9ff-432c-bee6-80e33b34fc9e">
+      <ID>Libelle Article Realise Maroc</ID>
+      <Name>Libelle Article Realise Maroc</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="23a99579-5d77-43e9-86a4-3a2cf162153b">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="14e39d14-6e1a-4e71-a915-a4c0ea29e584">
+            <TableID>dbo_CaracteristiqueArticle</TableID>
+            <ColumnID>LibelleArticleRealiseMaroc</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7de12e51-04dc-4347-b0fa-530326fa8c58">
+      <ID>Code Module Fonderie</ID>
+      <Name>Code Module Fonderie</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4fbcaec0-4419-40e3-a32f-7e6c3a4659e8">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b02669d6-ef33-476a-a3e0-b1706b0caccd">
+            <TableID>dbo_CaracteristiqueArticle</TableID>
+            <ColumnID>codeModuleFonderie</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="09e3b353-a7ba-46f3-8a0b-e54ffa0216ce">
+      <ID>Libelle Module Fonderie</ID>
+      <Name>Libelle Module Fonderie</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4c3e37f8-6f2c-4859-842a-7143362d4e0e">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3f9c96fd-7b60-41fe-95e4-4868b7931381">
+            <TableID>dbo_CaracteristiqueArticle</TableID>
+            <ColumnID>libelleModuleFonderie</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="717ad2ac-99ce-4ed1-b980-49e1eba658fe">
+      <ID>Code Depot Echantillon</ID>
+      <Name>Code Depot Echantillon</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c4f785fa-244b-4dcf-980f-41e7501b5bc1">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3c8f22e3-d64e-4120-8661-37b6da994eeb">
+            <TableID>dbo_CaracteristiqueArticle</TableID>
+            <ColumnID>codeDepotEchantillon</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="188319f8-486c-4c95-8008-c42c24d2b17b">
+      <ID>Libelle Depot Echantillon</ID>
+      <Name>Libelle Depot Echantillon</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="777c450a-ba84-4b73-9b2a-7465719e75ee">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cd905a12-ebc9-4398-b251-c5c983fbf2c2">
+            <TableID>dbo_CaracteristiqueArticle</TableID>
+            <ColumnID>libelleDepotEchantillon</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a72c2f2e-663f-4e85-b0d5-dc01b348527d">
+      <ID>Code Article Echangeable</ID>
+      <Name>Code Article Echangeable</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c05f7b6e-366e-4ab4-95ec-a85eef17deb3">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1a3807fe-ad14-4d6a-914d-66a25b291b7d">
+            <TableID>dbo_CaracteristiqueArticle</TableID>
+            <ColumnID>codeArticleEchangeable</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ec6c4e12-b69e-43ba-9ef1-2fa3ee26bd0f">
+      <ID>Libelle Article Echangeable</ID>
+      <Name>Libelle Article Echangeable</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="764e4f5f-7027-426f-a3e3-5f7cde12a1d7">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cc90462a-ff05-4e64-8a15-79c2bcf2cccd">
+            <TableID>dbo_CaracteristiqueArticle</TableID>
+            <ColumnID>libelleArticleEchangeable</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e765b158-1658-4074-bb33-371427b0f1c6">
+      <ID>Code Piece Securite</ID>
+      <Name>Code Piece Securite</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="135d47e7-5f8a-4f1b-8630-b60ac730f43e">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="762d6088-2e5a-4bb0-8da6-00e3ab214889">
+            <TableID>dbo_CaracteristiqueArticle</TableID>
+            <ColumnID>codePieceSecurite</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="526f8797-5ed3-43f8-b127-6948b9e07b49">
+      <ID>Libelle Piece Securite</ID>
+      <Name>Libelle Piece Securite</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5dfa76ae-301d-4aeb-a3c8-446763c3743b">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ad70df94-42f7-4709-82ba-af710c51dd28">
+            <TableID>dbo_CaracteristiqueArticle</TableID>
+            <ColumnID>libellePieceSecurite</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a3410b67-ce6f-49f2-ab55-7a740457dc50">
+      <ID>Code Controle Usine</ID>
+      <Name>Code Controle Usine</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="adbb3462-edf0-457c-ac02-788dfde2904a">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e4586f85-6524-4c9a-8407-acdf175fa7b5">
+            <TableID>dbo_CaracteristiqueArticle</TableID>
+            <ColumnID>codeControleUsine</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9e93da87-bff0-446d-8e85-bee17fc02811">
+      <ID>Libelle Controle Usine</ID>
+      <Name>Libelle Controle Usine</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="072601f1-8909-4611-95e8-c22b0a3e8813">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="befd5f23-a7f1-4a68-a150-e447f70a3764">
+            <TableID>dbo_CaracteristiqueArticle</TableID>
+            <ColumnID>libelleControleUsine</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="24d32b48-13b5-4590-b610-a6698dc176b2">
+      <ID>Code Essai Marque</ID>
+      <Name>Code Essai Marque</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="29281143-2853-48d2-a1ca-897f1bdbd6c3">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a93acce1-dd74-486a-bac6-2ca0254229ba">
+            <TableID>dbo_CaracteristiqueArticle</TableID>
+            <ColumnID>codeEssaiMarque</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6390ce46-8d27-4514-ad39-cbb41cbf5ddd">
+      <ID>Libelle Essai Marque</ID>
+      <Name>Libelle Essai Marque</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0222a656-a84f-4d08-b6ac-46d34f339aab">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2c4c67fa-7123-49c6-b07d-39ae502603bb">
+            <TableID>dbo_CaracteristiqueArticle</TableID>
+            <ColumnID>libelleEssaiMarque</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0e42ce30-f748-4818-b84f-88136a2c33ee">
+      <ID>Code Conditionnement</ID>
+      <Name>Code Conditionnement</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="deede63a-013d-4682-bb92-02926dc0b8d7">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ed1d0443-81ed-4326-8c9d-a2eb398cf929">
+            <TableID>dbo_CaracteristiqueArticle</TableID>
+            <ColumnID>codeConditionnement</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="595cfadf-b179-4250-8091-2d4e943bef94">
+      <ID>Libelle Conditionnement</ID>
+      <Name>Libelle Conditionnement</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="da798feb-94b5-4d19-a082-0b0fd110cb6e">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e49668a9-1c01-45db-9efd-c38004f7c046">
+            <TableID>dbo_CaracteristiqueArticle</TableID>
+            <ColumnID>libelleConditionnement</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="51720c4e-2f37-429b-8a53-215e594ca020">
+      <ID>Code Stock Equipement</ID>
+      <Name>Code Stock Equipement</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3cc86791-f0cb-41eb-b957-63a629fce53b">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="878ff6ae-726d-47c2-b687-cf9b6ee59841">
+            <TableID>dbo_CaracteristiqueArticle</TableID>
+            <ColumnID>codeStockEquipement</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bcc1247d-b889-4290-a55f-f2d200e70b02">
+      <ID>Libelle Stock Equipement</ID>
+      <Name>Libelle Stock Equipement</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a854c430-9fe6-42b1-aef5-d3f876498873">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d7874625-9d97-49e4-8741-0d41abcdf78c">
+            <TableID>dbo_CaracteristiqueArticle</TableID>
+            <ColumnID>libelleStockEquipement</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b72fd039-b215-493e-955d-c81f11d06f78">
+      <ID>Code Mutation</ID>
+      <Name>Code Mutation</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="368004d2-1472-455d-9699-bc7366a53d15">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="de547263-9f14-4dcd-a017-63f4af3e27fb">
+            <TableID>dbo_CaracteristiqueArticle</TableID>
+            <ColumnID>codeMutation</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="34b38a54-3a80-4f04-be23-303bb6ad5d1c">
+      <ID>Libelle Mutation</ID>
+      <Name>Libelle Mutation</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="64ef4507-77ab-4b94-a6e5-eb7584df15f6">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fac0517a-d534-4baf-9168-5abe39aa5621">
+            <TableID>dbo_CaracteristiqueArticle</TableID>
+            <ColumnID>libelleMutation</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+  </Attributes>
+</Dimension>

@@ -1,0 +1,297 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="73103d35-ae86-4608-b04b-9ef66397f366" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Facture Fournisseur Etranger</ID>
+  <Name>Facture Fournisseur Etranger</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-761" scrolltop="-7514" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="6932" y="20029" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="FactureFournisseurEtranger" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="5371" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000fb14000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_FactureFournisseurEtranger" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-761</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-7514</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="a4ad988c-10cc-405b-aba4-ba4ba7cc4dbc">
+    <DataSourceViewID>Vue stock</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="2eb681c5-8de1-4fae-b2b9-d48e7ce37835">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="10d4ca78-310a-43c4-9293-95e327ada443">
+      <ID>Id Facture</ID>
+      <Name>Id Facture</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>15507</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="30078e8d-9d0c-4659-8ae6-40080d9fe9b0">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="163270dd-b4d6-471a-bf29-929936a3a892">
+            <TableID>dbo_FactureFournisseurEtranger</TableID>
+            <ColumnID>idFacture</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="03288f06-d336-4cb7-bbf8-f8176141d43e">
+          <AttributeID>Numero Reception Valorisee</AttributeID>
+          <Name>Numero Reception Valorisee</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c7c9bafc-629d-4b52-b72f-c5b827f630c5">
+          <AttributeID>Situation Facture</AttributeID>
+          <Name>Situation Facture</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3b6997e5-75fb-482d-ace9-ca7bdfce79ab">
+          <AttributeID>Code Fournisseur</AttributeID>
+          <Name>Code Fournisseur</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="329f3cac-fba9-4bf7-abd7-c232480fb9d7">
+          <AttributeID>Matricule Utilisateur</AttributeID>
+          <Name>Matricule Utilisateur</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e80ca5ff-b69d-45d6-999d-de39e2c82f07">
+          <AttributeID>Numero FM</AttributeID>
+          <Name>Numero FM</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="59f88e3d-0c94-49a8-97d0-5dca62653da2">
+          <AttributeID>Numero Facture</AttributeID>
+          <Name>Numero Facture</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5377e284-51dc-4d82-ae64-19e76687aa9b">
+          <AttributeID>Code Devise</AttributeID>
+          <Name>Code Devise</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b7df24bf-c08b-4c23-84ae-0b513593ca86">
+          <AttributeID>Numero Reception</AttributeID>
+          <Name>Numero Reception</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9bde98ae-0b1f-4b20-b2bc-8646890aab9c">
+          <AttributeID>Numero Dossier</AttributeID>
+          <Name>Numero Dossier</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8d24d642-1bbc-436e-bfd7-337955516ce7">
+          <AttributeID>Code Beneficiaire</AttributeID>
+          <Name>Code Beneficiaire</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="658d5da9-b3ad-4ecd-ba45-89897ca8cd5a">
+      <ID>Numero Reception Valorisee</ID>
+      <Name>Numero Reception Valorisee</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7d8610da-c78a-4ebd-a032-40105aa01e5e">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6c2a1aa6-6d11-4e84-9f45-483be91a47a7">
+            <TableID>dbo_FactureFournisseurEtranger</TableID>
+            <ColumnID>NumeroReceptionValorisee</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1940943a-2a57-4e53-b4b9-dab0f62142f4">
+      <ID>Situation Facture</ID>
+      <Name>Situation Facture</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="94da56c5-a51e-4c8e-8fd6-5f37e57e2be5">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="75cd1969-1cce-4b29-a821-dd3d7f4cfd7b">
+            <TableID>dbo_FactureFournisseurEtranger</TableID>
+            <ColumnID>SituationFacture</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2b2f5880-9c4b-4ed8-8902-e3de2e2cd631">
+      <ID>Code Fournisseur</ID>
+      <Name>Code Fournisseur</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="de1a83d0-59fe-452d-ab9d-cca8f5b1c1fa">
+          <DataType>WChar</DataType>
+          <DataSize>7</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c5851752-6a44-41d1-8ca8-85142067e572">
+            <TableID>dbo_FactureFournisseurEtranger</TableID>
+            <ColumnID>CodeFournisseur</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6998e5ce-68c7-4dba-9e7e-9f63a1fa7c20">
+      <ID>Matricule Utilisateur</ID>
+      <Name>Matricule Utilisateur</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2260d662-8bca-48ab-a0b3-3d36de7b281f">
+          <DataType>WChar</DataType>
+          <DataSize>6</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0edd9c22-163b-450c-9867-b501c2e7fd5a">
+            <TableID>dbo_FactureFournisseurEtranger</TableID>
+            <ColumnID>MatriculeUtilisateur</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="dcafae0d-3faa-4e0b-bc71-afdd32883c71">
+      <ID>Numero FM</ID>
+      <Name>Numero FM</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d73451ae-6902-4840-bb13-d93fd168f07f">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e5f43bee-3bdc-45ee-b23a-7ee8a4b01274">
+            <TableID>dbo_FactureFournisseurEtranger</TableID>
+            <ColumnID>NumeroFM</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="172c5a29-d1e9-4d2e-a027-d5ae45989d0f">
+      <ID>Numero Facture</ID>
+      <Name>Numero Facture</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2a408447-3c07-48a4-bb44-b4fed96d9a55">
+          <DataType>WChar</DataType>
+          <DataSize>6</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="065f36c8-9eea-43c2-98c4-e69b63c68e42">
+            <TableID>dbo_FactureFournisseurEtranger</TableID>
+            <ColumnID>NumeroFacture</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fd6a7906-1739-4fd1-afd8-c842f0596f31">
+      <ID>Code Devise</ID>
+      <Name>Code Devise</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="95d1aa06-23c5-43e1-87e4-7bc84da09202">
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="777b8972-6e55-4b53-a92e-fb007865e3c3">
+            <TableID>dbo_FactureFournisseurEtranger</TableID>
+            <ColumnID>CodeDevise</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1c875d99-ac89-46f4-8639-6874166fd6d1">
+      <ID>Numero Reception</ID>
+      <Name>Numero Reception</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fc36534c-3e1b-4e07-8b46-a84758b9e359">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cbe1e1e1-7fd3-4d4f-912d-782f9397cfd2">
+            <TableID>dbo_FactureFournisseurEtranger</TableID>
+            <ColumnID>NumeroReception</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="81b0d3eb-4f97-4fbd-920b-b5d95f40ac83">
+      <ID>Numero Dossier</ID>
+      <Name>Numero Dossier</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5a4e1114-fbf4-4b92-a486-224b30ad903c">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d358de3d-a198-46a3-bf45-cadcd353b5eb">
+            <TableID>dbo_FactureFournisseurEtranger</TableID>
+            <ColumnID>NumeroDossier</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="64d26905-d9d4-4a37-a666-cdbe7d8803f8">
+      <ID>Code Beneficiaire</ID>
+      <Name>Code Beneficiaire</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="719c14f3-f85c-4d2d-a6f4-6eeb8843c5e8">
+          <DataType>WChar</DataType>
+          <DataSize>7</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3f0a4fa1-69b4-4e6a-9be4-39e780031179">
+            <TableID>dbo_FactureFournisseurEtranger</TableID>
+            <ColumnID>CodeBeneficiaire</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+  </Attributes>
+</Dimension>

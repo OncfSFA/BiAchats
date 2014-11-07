@@ -1,0 +1,212 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9f1ec1bf-f7d7-497d-8a06-b27103e802bf" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Origine</ID>
+  <Name>Origine</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2268" scrolltop="-4842" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7805" y="13679" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Origine" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3228" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800009c0c00009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Origine" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2268</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4842</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="ad9578ce-0ab9-4fbb-a8ea-076eafce70f2">
+    <DataSourceViewID>Vue stock</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="3fb78b68-38b0-4b30-801b-d82e4c27df28">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="7bb794fc-f5b1-4db4-9651-9c7626c9c7a3">
+      <ID>Code Origine</ID>
+      <Name>Code Origine</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>955</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1010b2db-3fce-4340-a55d-4f878c7abd65">
+          <NullProcessing>UnknownMember</NullProcessing>
+          <DataType>WChar</DataType>
+          <DataSize>5</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3423b404-779d-4904-be40-b24ee37066d2">
+            <TableID>dbo_Origine</TableID>
+            <ColumnID>codeOrigine</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="67240beb-6c11-4122-885c-9bc0809bceb8">
+          <AttributeID>Type Reference</AttributeID>
+          <Name>Type Reference</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="52623024-35df-4b33-8e2f-efbbee66575e">
+          <AttributeID>Libelle Reference</AttributeID>
+          <Name>Libelle Reference</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="bc3ec78a-3385-4ae9-843d-69cc2f6984c0">
+          <AttributeID>Indice1</AttributeID>
+          <Name>Indice1</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="efbfbcb3-ad9c-4d45-ab27-903d71d6c4cf">
+          <AttributeID>Indice2</AttributeID>
+          <Name>Indice2</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ba2cb0a5-ccdd-4505-b363-f38b492a6c18">
+          <AttributeID>Indice3</AttributeID>
+          <Name>Indice3</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8326e8fc-034f-4237-b71e-ef7b92ac34fb">
+          <AttributeID>Indice4</AttributeID>
+          <Name>Indice4</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="e679fd6f-6b9d-4ab0-85c4-df08df941157">
+      <ID>Type Reference</ID>
+      <Name>Type Reference</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="53020393-fb8a-47da-ac40-70351d5ef553">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="172e0ee4-da80-4c9c-a17c-773eacb8844f">
+            <TableID>dbo_Origine</TableID>
+            <ColumnID>typeReference</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="02dccfa1-4a9d-4161-941c-33057765bd3f">
+      <ID>Libelle Reference</ID>
+      <Name>Libelle Reference</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="694c13f1-10c7-4c12-9816-9263999254b4">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1aa4ad6a-a33d-40a7-9147-090944da6ba3">
+            <TableID>dbo_Origine</TableID>
+            <ColumnID>libelleReference</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="5e8b70ce-331c-48f7-8232-b7fec94b8a12">
+      <ID>Indice1</ID>
+      <Name>Indice1</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fa2b88a2-965d-46fb-9549-f74cb33bd6ab">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e94810fc-b49d-4ade-8e00-01d4e789558a">
+            <TableID>dbo_Origine</TableID>
+            <ColumnID>indice1</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="09bfe6ce-5038-496e-ad3a-684c528c0608">
+      <ID>Indice2</ID>
+      <Name>Indice2</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e3857309-a64a-4947-acc6-a4d9afa6b2c4">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="21dcd772-1711-4f62-bb67-4ce35f9858c1">
+            <TableID>dbo_Origine</TableID>
+            <ColumnID>indice2</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="5abfe5cf-d0a1-460a-b2cf-8a8d64b90584">
+      <ID>Indice3</ID>
+      <Name>Indice3</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8c3ae9bb-639a-4421-8217-611d700500ca">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="979f043f-edf5-417c-bc38-968796da6c51">
+            <TableID>dbo_Origine</TableID>
+            <ColumnID>indice3</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="12c22cf7-cbc8-4115-a7b4-4de4a0c13bba">
+      <ID>Indice4</ID>
+      <Name>Indice4</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="40f97ce8-b664-42be-a6cf-38bd70bdff8f">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9c1e062a-1ea8-4199-916c-9b4239904f1b">
+            <TableID>dbo_Origine</TableID>
+            <ColumnID>indice4</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+  </Attributes>
+</Dimension>

@@ -1,0 +1,309 @@
+﻿<Project xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <ProductVersion>10.50.1617.0</ProductVersion>
+  <SchemaVersion>9.0.2.10</SchemaVersion>
+  <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkZGwyMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAiIHhtbG5zOmRkbDIwMF8yMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAvMjAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD5mYWxzZTwvRW5hYmxlZD4NCiAgPFByb2plY3ROYW1lPjwvUHJvamVjdE5hbWU+DQogIDxBdXhQYXRoPjwvQXV4UGF0aD4NCiAgPExvY2FsUGF0aD48L0xvY2FsUGF0aD4NCiAgPFByb3ZpZGVyPjwvUHJvdmlkZXI+DQo8L1NvdXJjZUNvbnRyb2xJbmZvPg==</State>
+  <Database>
+    <Name>cubeAchat.database</Name>
+    <FullPath>cubeAchat.database</FullPath>
+  </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>Achat.cube</Name>
+      <FullPath>Achat.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Achat.partitions</Name>
+          <FullPath>Achat.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Approvisionnement.cube</Name>
+      <FullPath>Approvisionnement.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Approvisionnement.partitions</Name>
+          <FullPath>Approvisionnement.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>Caracteristique Commande.dim</Name>
+      <FullPath>Caracteristique Commande.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Type Commande.dim</Name>
+      <FullPath>Type Commande.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Urgence.dim</Name>
+      <FullPath>Urgence.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Marocain Etranger.dim</Name>
+      <FullPath>Marocain Etranger.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Mode Paiement.dim</Name>
+      <FullPath>Mode Paiement.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Famille Article.dim</Name>
+      <FullPath>Famille Article.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Commande.dim</Name>
+      <FullPath>Commande.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Date Global.dim</Name>
+      <FullPath>Date Global.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Article.dim</Name>
+      <FullPath>Article.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Etablissement.dim</Name>
+      <FullPath>Etablissement.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Non Approvisionnement.dim</Name>
+      <FullPath>Non Approvisionnement.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Mode Confection.dim</Name>
+      <FullPath>Mode Confection.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Matiere Article.dim</Name>
+      <FullPath>Matiere Article.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Origine Article.dim</Name>
+      <FullPath>Origine Article.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Direction.dim</Name>
+      <FullPath>Direction.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Direction Projet.dim</Name>
+      <FullPath>Direction Projet.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Projet.dim</Name>
+      <FullPath>Projet.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Reapprovisionnement.dim</Name>
+      <FullPath>Reapprovisionnement.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Restruction AO.dim</Name>
+      <FullPath>Restruction AO.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Type Appel Offre.dim</Name>
+      <FullPath>Type Appel Offre.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Appel Offre.dim</Name>
+      <FullPath>Appel Offre.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Accessoire Commande.dim</Name>
+      <FullPath>Accessoire Commande.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fournisseur.dim</Name>
+      <FullPath>Fournisseur.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Situation.dim</Name>
+      <FullPath>Situation.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Appel Offre Par Article.dim</Name>
+      <FullPath>Appel Offre Par Article.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Appel Offre Par Article Projet.dim</Name>
+      <FullPath>Appel Offre Par Article Projet.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Reference Article.dim</Name>
+      <FullPath>Reference Article.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Origine.dim</Name>
+      <FullPath>Origine.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Libelle Article.dim</Name>
+      <FullPath>Libelle Article.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Type Inventaire.dim</Name>
+      <FullPath>Type Inventaire.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Type Magasin.dim</Name>
+      <FullPath>Type Magasin.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Type Parc.dim</Name>
+      <FullPath>Type Parc.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Article Par Magasin.dim</Name>
+      <FullPath>Article Par Magasin.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Article Par Magasin Projet.dim</Name>
+      <FullPath>Article Par Magasin Projet.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Article Par Projet.dim</Name>
+      <FullPath>Article Par Projet.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Comptabilite.dim</Name>
+      <FullPath>Comptabilite.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Type Prevision.dim</Name>
+      <FullPath>Type Prevision.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Prevision.dim</Name>
+      <FullPath>Prevision.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Appel Offre Article Detail Poste.dim</Name>
+      <FullPath>Appel Offre Article Detail Poste.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Appel Offre Article Detail Article Par Poste.dim</Name>
+      <FullPath>Appel Offre Article Detail Article Par Poste.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Appel Offre Article Detail Article Commande.dim</Name>
+      <FullPath>Appel Offre Article Detail Article Commande.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Commande Par Article.dim</Name>
+      <FullPath>Commande Par Article.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Appel Offre Article.dim</Name>
+      <FullPath>Appel Offre Article.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Demande Stock.dim</Name>
+      <FullPath>Demande Stock.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Type Article Commande.dim</Name>
+      <FullPath>Type Article Commande.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Commande Article.dim</Name>
+      <FullPath>Commande Article.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Caracteristique Article.dim</Name>
+      <FullPath>Caracteristique Article.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Classement Article.dim</Name>
+      <FullPath>Classement Article.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Type Achat.dim</Name>
+      <FullPath>Type Achat.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Methode Reapprovisionnement.dim</Name>
+      <FullPath>Methode Reapprovisionnement.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>AGAC.dim</Name>
+      <FullPath>AGAC.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Libelle Special Article Fournisseur.dim</Name>
+      <FullPath>Libelle Special Article Fournisseur.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Liaison Article Fournisseur.dim</Name>
+      <FullPath>Liaison Article Fournisseur.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Facture Fournisseur Etranger.dim</Name>
+      <FullPath>Facture Fournisseur Etranger.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Facture FRET.dim</Name>
+      <FullPath>Facture FRET.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Facture Fournisseur Maroc.dim</Name>
+      <FullPath>Facture Fournisseur Maroc.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Type Facture.dim</Name>
+      <FullPath>Type Facture.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Type Avoir.dim</Name>
+      <FullPath>Type Avoir.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Avoir.dim</Name>
+      <FullPath>Avoir.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
+  <DataSources>
+    <ProjectItem>
+      <Name>DataWareHouseStock.ds</Name>
+      <FullPath>DataWareHouseStock.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>Vue stock.dsv</Name>
+      <FullPath>Vue stock.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
+  <Roles>
+    <ProjectItem>
+      <Name>Role.role</Name>
+      <FullPath>Role.role</FullPath>
+    </ProjectItem>
+  </Roles>
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>DataWareHouseStock</Id>
+            <Name>DataWareHouseStock</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI10.1;Data Source=.;Password=;User ID=;Initial Catalog=STOCK_DW</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>DataWareHouseStock</Id>
+            <Name>DataWareHouseStock</Name>
+            <Value xsi:type="xsd:int">1</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+        <DeploymentServerEdition>Enterprise</DeploymentServerEdition>
+      </Options>
+    </Configuration>
+  </Configurations>
+</Project>

@@ -1,0 +1,432 @@
+﻿<ConfigurationSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Database>
+    <DataSources>
+      <DataSource>
+        <ID>DataWareHouseStock</ID>
+        <ConnectionString>Provider=SQLNCLI10.1;Data Source=.;Password=;User ID=;Initial Catalog=STOCK_DW</ConnectionString>
+        <ImpersonationInfo>
+          <ImpersonationMode>ImpersonateServiceAccount</ImpersonationMode>
+          <ImpersonationInfoSecurity>Unchanged</ImpersonationInfoSecurity>
+        </ImpersonationInfo>
+      </DataSource>
+    </DataSources>
+    <Dimensions>
+      <Dimension>
+        <ID>Caracteristique Commande</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Type Commande</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Urgence</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Marocain Etranger</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Mode Paiement</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Famille Article</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Commande</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Date Global</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Article</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Etablissement</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Non Approvisionnement</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Mode Confection</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Matiere Article</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Origine Article</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Direction</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Direction Projet</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Projet</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Reapprovisionnement</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Restruction AO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Type Appel Offre</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Appel Offre</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Accessoire Commande</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Fournisseur</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Situation</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Appel Offre Par Article</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Appel Offre Par Article Projet</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Reference Article</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Origine</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Libelle Article</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Type Inventaire</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Type Magasin</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Type Parc</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Article Par Magasin</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Article Par Magasin Projet</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Article Par Projet</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Comptabilite</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Type Prevision</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Prevision</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Appel Offre Article Detail Poste</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Appel Offre Article Detail Article Par Poste</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Appel Offre Article Detail Article Commande</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Commande Par Article</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Appel Offre Article</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Demande Stock</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Type Article Commande</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Commande Article</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Caracteristique Article</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Classement Article</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Type Achat</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Methode Reapprovisionnement</ID>
+      </Dimension>
+      <Dimension>
+        <ID>AGAC</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Libelle Special Article Fournisseur</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Liaison Article Fournisseur</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Facture Fournisseur Etranger</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Facture FRET</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Facture Fournisseur Maroc</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Type Facture</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Type Avoir</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Avoir</ID>
+      </Dimension>
+    </Dimensions>
+    <Cubes>
+      <Cube>
+        <ID>Achat</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Commande</ID>
+            <Partitions>
+              <Partition>
+                <ID>Commande</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Article</ID>
+            <Partitions>
+              <Partition>
+                <ID>Article</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Appel Offre</ID>
+            <Partitions>
+              <Partition>
+                <ID>Appel Offre</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Projet</ID>
+            <Partitions>
+              <Partition>
+                <ID>Projet</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Accessoire Commande</ID>
+            <Partitions>
+              <Partition>
+                <ID>Accessoire Commande</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Appel Offre Par Article</ID>
+            <Partitions>
+              <Partition>
+                <ID>Appel Offre Par Article</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Appel Offre Par Article Projet</ID>
+            <Partitions>
+              <Partition>
+                <ID>Appel Offre Par Article Projet</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Reference Article</ID>
+            <Partitions>
+              <Partition>
+                <ID>Reference Article</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Libelle Article</ID>
+            <Partitions>
+              <Partition>
+                <ID>Libelle Article</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Article Par Projet</ID>
+            <Partitions>
+              <Partition>
+                <ID>Article Par Projet</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Article Par Magasin</ID>
+            <Partitions>
+              <Partition>
+                <ID>Article Par Magasin</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Article Par Magasin Projet</ID>
+            <Partitions>
+              <Partition>
+                <ID>Article Par Magasin Projet</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Appel Offre Article Detail Article Commande</ID>
+            <Partitions>
+              <Partition>
+                <ID>Appel Offre Article Detail Article Commande</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Appel Offre Article Detail Article Par Poste</ID>
+            <Partitions>
+              <Partition>
+                <ID>Appel Offre Article Detail Article Par Poste</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Appel Offre Article Detail Poste</ID>
+            <Partitions>
+              <Partition>
+                <ID>Appel Offre Article Detail Poste</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Demande Stock</ID>
+            <Partitions>
+              <Partition>
+                <ID>Demande Stock</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Commande Article</ID>
+            <Partitions>
+              <Partition>
+                <ID>Commande Article</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Liaison Article Fournisseur</ID>
+            <Partitions>
+              <Partition>
+                <ID>Liaison Article Fournisseur</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Libelle Special Article Fournisseur</ID>
+            <Partitions>
+              <Partition>
+                <ID>Libelle Special Article Fournisseur</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Facture Fournisseur Maroc</ID>
+            <Partitions>
+              <Partition>
+                <ID>Facture Fournisseur Maroc</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Facture Fournisseur Etranger</ID>
+            <Partitions>
+              <Partition>
+                <ID>Facture Fournisseur Etranger</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Facture FRET</ID>
+            <Partitions>
+              <Partition>
+                <ID>Facture FRET</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Avoir</ID>
+            <Partitions>
+              <Partition>
+                <ID>Avoir</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>Approvisionnement</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Comptabilite</ID>
+            <Partitions>
+              <Partition>
+                <ID>INF2001</ID>
+              </Partition>
+              <Partition>
+                <ID>2002-2004</ID>
+              </Partition>
+              <Partition>
+                <ID>2005-2007</ID>
+              </Partition>
+              <Partition>
+                <ID>2008-2010</ID>
+              </Partition>
+              <Partition>
+                <ID>2011-2013</ID>
+              </Partition>
+              <Partition>
+                <ID>SUP2014</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Prevision</ID>
+            <Partitions>
+              <Partition>
+                <ID>Prevision</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Demande Stock</ID>
+            <Partitions>
+              <Partition>
+                <ID>Demande Stock</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+    </Cubes>
+    <DataSourceImpersonationInfo>
+      <ImpersonationMode>Default</ImpersonationMode>
+      <ImpersonationInfoSecurity>Unchanged</ImpersonationInfoSecurity>
+    </DataSourceImpersonationInfo>
+  </Database>
+</ConfigurationSettings>

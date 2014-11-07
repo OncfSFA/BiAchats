@@ -1,0 +1,238 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="7685c524-9dd6-411f-9ae0-bbb1887af1ac" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Article Par Magasin</ID>
+  <Name>Article Par Magasin</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2057" scrolltop="-4339" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="6932" y="20029" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="ArticleParMagasin" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3810" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000e20e000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_ArticleParMagasin" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2057</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4339</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="37832c3c-8876-4ce0-86b9-0b278714d6b8">
+    <DataSourceViewID>Vue stock</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="4d4ad633-2728-4264-aeb4-2c0d31b0a0f4">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="3cb9f256-2b39-4468-a921-02c914914dd5">
+      <ID>Id</ID>
+      <Name>Id</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b00f4960-5748-4812-b7c2-f0184bc315be">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b5b03fc0-2fc3-4508-a36b-c019fdc31ee1">
+            <TableID>dbo_ArticleParMagasin</TableID>
+            <ColumnID>id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="1464fbec-693b-4d74-8e63-627cb383b047">
+          <AttributeID>Code Magasin</AttributeID>
+          <Name>Code Magasin</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3281fffb-a8ac-4857-bcda-5cab34fc0551">
+          <AttributeID>Code Section</AttributeID>
+          <Name>Code Section</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d5de904f-d6a3-4eed-824f-40d700295000">
+          <AttributeID>Numero Casier</AttributeID>
+          <Name>Numero Casier</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a2c14bfd-0d73-410a-93e7-4a4c6560c14e">
+          <AttributeID>Face Casier</AttributeID>
+          <Name>Face Casier</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="64129363-f9ff-45e8-af87-1f5e84e49967">
+          <AttributeID>Ordre Casier</AttributeID>
+          <Name>Ordre Casier</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d943fa73-3ae2-491c-98c3-64260087e092">
+          <AttributeID>Code Verouillage</AttributeID>
+          <Name>Code Verouillage</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9e9562ee-a59f-45bc-bd24-5d131ffc2310">
+          <AttributeID>Nomenclature</AttributeID>
+          <Name>Nomenclature</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3d8258b3-6b5a-483c-aed2-bb405e2ced5d">
+      <ID>Code Magasin</ID>
+      <Name>Code Magasin</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="dbf3a552-8c5e-4f18-98ce-12019f5b55c3">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="495ffd0a-3572-473b-b72a-c181daa37abb">
+            <TableID>dbo_ArticleParMagasin</TableID>
+            <ColumnID>CodeMagasin</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="36e8f977-8492-4ae7-866f-72ad64a8cd25">
+      <ID>Code Section</ID>
+      <Name>Code Section</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="03619765-930d-4330-8dd8-42e6916744f8">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a32e5aa3-742f-464e-aa95-c4349a77d0a7">
+            <TableID>dbo_ArticleParMagasin</TableID>
+            <ColumnID>CodeSection</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f29af9e0-64d5-4688-9d66-76277042aef4">
+      <ID>Numero Casier</ID>
+      <Name>Numero Casier</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0fc5853b-080e-4e07-b4b8-5bc61fd46107">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="983edf87-3f16-4a94-b7e2-af29e03771b1">
+            <TableID>dbo_ArticleParMagasin</TableID>
+            <ColumnID>numeroCasier</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="deec728d-b6e5-4af2-8d99-68a70f641e28">
+      <ID>Face Casier</ID>
+      <Name>Face Casier</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="dadad37e-85b6-4089-9e72-7157aa44d03f">
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e9d20f3e-5488-4b9f-8e87-544e35826835">
+            <TableID>dbo_ArticleParMagasin</TableID>
+            <ColumnID>FaceCasier</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a8a322b1-fb9e-4241-941f-be2aa384671d">
+      <ID>Ordre Casier</ID>
+      <Name>Ordre Casier</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="91a1d474-5968-4e6b-9005-6c10d383eced">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3eb57916-9305-4596-942c-463524971f5a">
+            <TableID>dbo_ArticleParMagasin</TableID>
+            <ColumnID>OrdreCasier</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="aaab6ddf-9993-4137-9928-14a0ef473415">
+      <ID>Code Verouillage</ID>
+      <Name>Code Verouillage</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a9f5ef01-8c7f-4d2d-9002-2931de0cb38b">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a1aa055d-09c3-4dcc-8943-c0f1bc531994">
+            <TableID>dbo_ArticleParMagasin</TableID>
+            <ColumnID>CodeVerouillage</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7de27724-b661-4f43-b002-2839d6150522">
+      <ID>Nomenclature</ID>
+      <Name>Nomenclature</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="62c024f4-0b82-4610-97a4-65011af4788f">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="03e9f86c-24f1-4e29-80dc-c86829c57074">
+            <TableID>dbo_ArticleParMagasin</TableID>
+            <ColumnID>Nomenclature</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+  </Attributes>
+</Dimension>

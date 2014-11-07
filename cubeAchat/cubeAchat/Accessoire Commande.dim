@@ -1,0 +1,208 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e5cc7e40-a27b-4d94-9721-c2681c1bf648" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Accessoire Commande</ID>
+  <Name>Accessoire Commande</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2071" scrolltop="-4842" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="6879" y="5265" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="AccessoireCommande" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3545" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000d90d00009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_AccessoireCommande" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2071</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4842</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="e95bd990-8936-48ae-acab-1bf57ef80242">
+    <DataSourceViewID>Vue stock</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="8e992636-c9ee-4d9a-96e1-9f423ee6eb0d">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="5264e622-9337-41a1-b1e7-faa2b35adf72">
+      <ID>Id Accessoire</ID>
+      <Name>Id Accessoire</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>417</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2f3569d0-a8c4-4a23-9b7e-088f9955b6ba">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e26e0374-896c-45ad-ab82-a8a577e67ba7">
+            <TableID>dbo_AccessoireCommande</TableID>
+            <ColumnID>idAccessoire</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="5dfdf9fd-c62f-497a-819c-d1a6fee502a0">
+          <AttributeID>Numero Poste</AttributeID>
+          <Name>Numero Poste</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="62198a8d-0dd8-45d6-9fde-a2e70dca014d">
+          <AttributeID>Numero Variante</AttributeID>
+          <Name>Numero Variante</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1796831f-03ad-4a95-8a7f-45261a6fb00d">
+          <AttributeID>Code Prix</AttributeID>
+          <Name>Code Prix</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9ec8d69a-19b5-465b-90ad-6549a3f6a8a4">
+          <AttributeID>Numero Commande</AttributeID>
+          <Name>Numero Commande</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2ce9bb62-96a2-4a3f-a61e-8e434ec60840">
+          <AttributeID>Code Fournisseur</AttributeID>
+          <Name>Code Fournisseur</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7155c522-d548-4938-967b-b735748296f5">
+          <AttributeID>Numero AO</AttributeID>
+          <Name>Numero AO</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+    </Attribute>
+    <Attribute dwd:design-time-name="c05c9f88-5a2e-413c-90e5-be4e6c8d28f8">
+      <ID>Numero Poste</ID>
+      <Name>Numero Poste</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3cac08ea-0b5d-467b-9687-5e5e5963bcc5">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="34241bb5-5fbb-4f8b-811b-4660b2a0254c">
+            <TableID>dbo_AccessoireCommande</TableID>
+            <ColumnID>numeroPoste</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="3df9cc82-0b60-4119-b4b9-4dbf6582cab7">
+      <ID>Numero Variante</ID>
+      <Name>Numero Variante</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6b74e70c-e4ee-4c2a-bde6-78964f4035b7">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5f0b0e63-b77a-480c-8e42-bde2310a3be9">
+            <TableID>dbo_AccessoireCommande</TableID>
+            <ColumnID>numeroVariante</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="4ed10aa2-47fe-4d50-b4ad-3b1ac8506cde">
+      <ID>Code Prix</ID>
+      <Name>Code Prix</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="18e0d199-1a50-4919-8840-788c6d8ed960">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="755ae28e-8d4e-4a52-b2f0-0f0ad0a2aba7">
+            <TableID>dbo_AccessoireCommande</TableID>
+            <ColumnID>CodePrix</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="45ac19c3-eca9-4e14-9093-275c9f266a97">
+      <ID>Numero Commande</ID>
+      <Name>Numero Commande</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0ae26405-11dc-45fc-8074-daeb322a6ebf">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0b7d3963-b108-475c-9833-4062da1652c4">
+            <TableID>dbo_AccessoireCommande</TableID>
+            <ColumnID>numeroCommande</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Attribute>
+    <Attribute dwd:design-time-name="1e7d1bbb-2f86-423f-b827-c7a0d5c96892">
+      <ID>Code Fournisseur</ID>
+      <Name>Code Fournisseur</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="988037dc-0541-495b-a427-f9b1f3670407">
+          <DataType>WChar</DataType>
+          <DataSize>7</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="830decf8-7e82-4e20-aa1b-e4a8cf3b97e0">
+            <TableID>dbo_AccessoireCommande</TableID>
+            <ColumnID>codeFournisseur</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Attribute>
+    <Attribute dwd:design-time-name="faebf09c-987c-4bb8-a411-603e29d1e646">
+      <ID>Numero AO</ID>
+      <Name>Numero AO</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="de68f7df-31c6-4ab6-b363-891941db56cd">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2dbfb475-6ee1-41eb-988f-cdac5bbece13">
+            <TableID>dbo_AccessoireCommande</TableID>
+            <ColumnID>numeroAO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Attribute>
+  </Attributes>
+</Dimension>

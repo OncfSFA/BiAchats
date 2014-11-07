@@ -1,0 +1,481 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>cubeAchat</Database>
+    <Server>localhost</Server>
+    <ConnectionString>DataSource=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Full</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>zMuyUwxRhH6X/PDolfA7RQ==27/11/2013 16:15:5928/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>DataWareHouseStock</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>s4eK6hfn2gGZBS0HOiehfw==05/08/2014 12:29:4328/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Vue stock</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>yVEE8eqhBghZIq7fpk6iNQ==22/11/2013 14:14:1228/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Caracteristique Commande</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>acZsrmD0aodnefH6IdGPtg==20/11/2013 20:51:4528/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Type Commande</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>VN0YMyczBgaWQMoCvidYyA==22/11/2013 14:14:1228/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Urgence</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>hwR1FNI31E+X0SjcEebj+A==22/11/2013 14:14:1228/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Marocain Etranger</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>fCD/uG0799WT8a63tA+5VA==22/11/2013 14:14:1228/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Mode Paiement</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>vXGttZKAVcL5dMvDGzVrdg==22/11/2013 14:14:1228/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Famille Article</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>o6bVhfWrDYBbDJEmYyR5QQ==22/11/2013 14:14:1328/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Commande</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>gp6hZzNilR0BxjgSqZeLJw==22/11/2013 14:14:1328/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Date Global</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>15gynDkARX5BfJy/AsBS6w==22/11/2013 15:49:0728/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Article</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>+1AFnlTE5ZTjgnJlLeppPQ==22/11/2013 14:14:1328/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Etablissement</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>2lbbdFMruyR1+NAz9emkqw==22/11/2013 14:14:1428/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Non Approvisionnement</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>L1VSsRt6ZQiDp267C7a+VA==22/11/2013 14:14:1428/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Mode Confection</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Aa3OTqEyQKKrv2mBHvpl/Q==22/11/2013 14:14:1428/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Matiere Article</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>1rqXtQC3zUjAMWUTJrneWA==22/11/2013 14:14:1428/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Origine Article</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>/gyotFJ4p/OPe51PH3vmoA==22/11/2013 14:14:1328/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Direction</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>+iexW2KpEYznXUVNbCIm9w==22/11/2013 14:14:1428/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Direction Projet</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Id28zWm+jATm0PTYlyBfkg==22/11/2013 16:11:1128/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Projet</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>vjc8ca9EM2g1hrKzwuWEYg==22/11/2013 14:14:1428/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Reapprovisionnement</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>1hD8KIvsjw0SoE2TWuRxew==22/11/2013 14:14:1528/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Restruction AO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>pA1Z+FW+R+swmaClAEoJcQ==22/11/2013 14:14:1528/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Type Appel Offre</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>1b+2a4hfYNkmONBP8dqpUA==22/11/2013 14:14:1428/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Appel Offre</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>/gxlJkBue3mLFjSoAMlq2Q==22/11/2013 14:14:1528/11/2013 10:52:11</TimeStamp>
+        <ID>
+          <String>Accessoire Commande</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>VWARp6qwF8c01gipDD9wyQ==22/11/2013 14:14:1028/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Fournisseur</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>p0LnBoHqfKCnRcRKqjAKhw==22/11/2013 16:06:0228/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Situation</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>AZ85emS8talO8VtbAf2omw==28/11/2013 10:45:4128/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Appel Offre Par Article</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>+4es7Lt3yHbaO+TGeBNB/g==28/11/2013 10:45:4128/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Appel Offre Par Article Projet</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>7SeLXeQAC14ohQL332IB3w==28/11/2013 10:45:4128/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Reference Article</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>lOP3+mM/LBpCuLQ2WWW5iQ==22/11/2013 17:29:3328/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Origine</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>/l75h+aCtSELjSjrZFMlGw==22/11/2013 18:35:1728/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Libelle Article</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>xJGj11eCyTRPXrQEBWRHsg==24/11/2013 17:06:3928/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Type Inventaire</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>hYL+Nr3ktn2/GOnk2R5Q5A==24/11/2013 17:07:2828/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Type Magasin</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>6lzRb/2hg7kH7uNi154oLg==24/11/2013 17:07:5528/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Type Parc</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>K4rhrt4vQy3cIQiVJ6nWJg==28/11/2013 10:45:4128/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Article Par Magasin</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>/h7sQ0TNoQ1QaU96mK2AXQ==28/11/2013 10:45:4128/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Article Par Magasin Projet</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>2lkHwDix0lb5Nof/gaQrFg==28/11/2013 10:45:4128/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Article Par Projet</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Hpe+Mh4IZ0wycI3z5eacsQ==28/11/2013 10:45:4128/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Comptabilite</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>cQtczdG45yxu+ihZnE3uUg==26/11/2013 23:40:5628/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Type Prevision</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>mIRNOToahkwDr0gQk+iu8A==28/11/2013 10:45:4128/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Prevision</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>F1o/Kf+48Mag4S6zCwjF7g==26/11/2013 23:40:5728/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Appel Offre Article Detail Poste</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>199NqhnIIHAexVNVfX8vkw==28/11/2013 10:45:4128/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Appel Offre Article Detail Article Par Poste</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>3hOE6P2Nw9zpE+Mg4rA3xg==28/11/2013 10:45:4128/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Appel Offre Article Detail Article Commande</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>WXn1z1VqlhifYzodq/vBhQ==26/11/2013 23:40:5728/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Commande Par Article</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>zycx0AcsDZkmCsUpcoEUcA==26/11/2013 23:40:5628/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Appel Offre Article</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>2Wy0Tj+PLtKgs9N2l31vwg==28/11/2013 10:45:4128/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Demande Stock</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>KvKbvfZCMY+hBw2li9D4WA==27/11/2013 01:11:1028/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Type Article Commande</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>5fcxu++L5A/HPGKr7rzfUw==28/11/2013 10:45:4128/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Commande Article</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>2yNt1ee3i0P4Grissrg++w==27/11/2013 16:18:0728/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Caracteristique Article</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>CeaoJTY6rq5XM3C4tE+iIw==27/11/2013 16:19:5828/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Classement Article</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>PdNmrobBZv5Mea7JxLEGdA==27/11/2013 16:23:2728/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Type Achat</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>XlB8SdIMrHCBH2dyfqTExg==27/11/2013 16:25:4728/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Methode Reapprovisionnement</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>0wVtLk5gEiY7mqacEGJ1gQ==28/11/2013 10:28:2028/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>AGAC</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>BlISbKTxyQhMkfr+TqJrXQ==28/11/2013 10:46:2728/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Libelle Special Article Fournisseur</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>7Xjpnr+yzMkqJZkRxd6udA==28/11/2013 10:28:2028/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Liaison Article Fournisseur</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>TS3Ikdv6G+Gev6aF0WNAMQ==28/11/2013 10:39:2428/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Facture Fournisseur Etranger</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>LTlyTv4YMQgr+qSrREmoFg==28/11/2013 10:39:2428/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Facture FRET</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>J2xrRTPYZZBepyLja6zXuQ==28/11/2013 10:46:2728/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Facture Fournisseur Maroc</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>o/kW74tJvZH+7H699ZrAQg==28/11/2013 10:39:2428/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Type Facture</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>vEruQDPMaEC9heNWvYBG+g==28/11/2013 10:39:2428/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Type Avoir</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>zWVZ7wIZnUbfMxKpSi0b/g==28/11/2013 10:39:2228/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Avoir</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>Epn4TBevbwBLyWWI0py1IA==05/08/2014 12:29:4328/11/2013 10:52:11ZNB2V64cFC1oFn5kTg29Tw==05/08/2014 12:29:4328/11/2013 10:52:11</TimeStamp>
+        <ID>
+          <String>Achat</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>qDmIrsDSAL6k0IGTWXDQbw==28/11/2013 10:19:2928/11/2013 10:52:12/icD+QTyr+38YnKv87bWuA==26/11/2013 23:40:5628/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Approvisionnement</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Role</Type>
+        <TimeStamp>z+J5eNyWS3A34m1rRwUWLQ==28/11/2013 10:19:2728/11/2013 10:52:12</TimeStamp>
+        <ID>
+          <String>Role</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>IDcO5mwzobbebpfH+iwz0Q==20/11/2013 23:36:1728/11/2013 10:52:12</TimeStamp>
+      <ID>
+        <String>cubeAchat</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2014-08-05T12:38:46.723333Z</LastDeployed>
+</DeploymentSnapshot>

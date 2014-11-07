@@ -1,0 +1,1969 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b4c45bba-2e2f-4fdd-9159-459fd41a24a0" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Approvisionnement</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Comptabilite</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="b771e0f1-9ce1-4c89-8140-4aa493d1f640">
+          <ID>INF2001</ID>
+          <Name>INF2001</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="25e84843-9d35-43d6-8cf6-0d50d5cd1078">
+            <DataSourceID>DataWareHouseStock</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[Comptabilite].[id],[dbo].[Comptabilite].[CodeMouvement],[dbo].[Comptabilite].[NumeroMouvement],[dbo].[Comptabilite].[Nomenclature],[dbo].[Comptabilite].[NumeroProjet],[dbo].[Comptabilite].[CodeLivraison],[dbo].[Comptabilite].[CleGLDebiteur],[dbo].[Comptabilite].[cleGLCrediteur],[dbo].[Comptabilite].[DateMouvement],[dbo].[Comptabilite].[DateComptable],[dbo].[Comptabilite].[MontantMouvement]
+		FROM [dbo].[Comptabilite]
+		WHERE
+year(DateComptable)&lt;2002</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>289499</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="97567dc9-b30c-482f-b615-2f6061e5f94d">
+          <ID>2002-2004</ID>
+          <Name>2002-2004</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="4137e112-3a33-44c1-ac3d-c93c39502610">
+            <DataSourceID>DataWareHouseStock</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[Comptabilite].[id],[dbo].[Comptabilite].[CodeMouvement],[dbo].[Comptabilite].[NumeroMouvement],[dbo].[Comptabilite].[Nomenclature],[dbo].[Comptabilite].[NumeroProjet],[dbo].[Comptabilite].[CodeLivraison],[dbo].[Comptabilite].[CleGLDebiteur],[dbo].[Comptabilite].[cleGLCrediteur],[dbo].[Comptabilite].[DateMouvement],[dbo].[Comptabilite].[DateComptable],[dbo].[Comptabilite].[MontantMouvement]
+		FROM [dbo].[Comptabilite]
+		WHERE
+year(DateComptable)&gt;=2002 and year(DateComptable)&lt;2005</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="dd17bc76-e90e-47ad-a20a-87698d5db6c6">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <AggregationStorage>MolapOnly</AggregationStorage>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="8aabc24a-7b71-4cdd-aa1f-b529f442ff94">
+              <NotificationTechnique>Server</NotificationTechnique>
+            </Source>
+          </ProactiveCaching>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="ddefa71c-6c0e-4625-acf2-20450181fe7b">
+          <ID>2005-2007</ID>
+          <Name>2005-2007</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="e3ce31e2-ed41-4889-85f1-f148c8bad529">
+            <DataSourceID>DataWareHouseStock</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[Comptabilite].[id],[dbo].[Comptabilite].[CodeMouvement],[dbo].[Comptabilite].[NumeroMouvement],[dbo].[Comptabilite].[Nomenclature],[dbo].[Comptabilite].[NumeroProjet],[dbo].[Comptabilite].[CodeLivraison],[dbo].[Comptabilite].[CleGLDebiteur],[dbo].[Comptabilite].[cleGLCrediteur],[dbo].[Comptabilite].[DateMouvement],[dbo].[Comptabilite].[DateComptable],[dbo].[Comptabilite].[MontantMouvement]
+		FROM [dbo].[Comptabilite]
+		WHERE
+year(DateComptable)&gt;=2005 and year(DateComptable)&lt;2008</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="14f7d5d8-dfaf-4413-9fa0-cbf877086e5d">
+          <ID>2008-2010</ID>
+          <Name>2008-2010</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="5b9647d1-b641-4d45-b0fa-a222a82d0754">
+            <DataSourceID>DataWareHouseStock</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[Comptabilite].[id],[dbo].[Comptabilite].[CodeMouvement],[dbo].[Comptabilite].[NumeroMouvement],[dbo].[Comptabilite].[Nomenclature],[dbo].[Comptabilite].[NumeroProjet],[dbo].[Comptabilite].[CodeLivraison],[dbo].[Comptabilite].[CleGLDebiteur],[dbo].[Comptabilite].[cleGLCrediteur],[dbo].[Comptabilite].[DateMouvement],[dbo].[Comptabilite].[DateComptable],[dbo].[Comptabilite].[MontantMouvement]
+		FROM [dbo].[Comptabilite]
+		WHERE
+year(DateComptable)&gt;=2008 and year(DateComptable)&lt;=2010</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="9470c3cd-7789-415e-a500-99051cb08445">
+          <ID>2011-2013</ID>
+          <Name>2011-2013</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="327ff34a-e1a0-44d5-8ef8-6d7d3caddff0">
+            <DataSourceID>DataWareHouseStock</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[Comptabilite].[id],[dbo].[Comptabilite].[CodeMouvement],[dbo].[Comptabilite].[NumeroMouvement],[dbo].[Comptabilite].[Nomenclature],[dbo].[Comptabilite].[NumeroProjet],[dbo].[Comptabilite].[CodeLivraison],[dbo].[Comptabilite].[CleGLDebiteur],[dbo].[Comptabilite].[cleGLCrediteur],[dbo].[Comptabilite].[DateMouvement],[dbo].[Comptabilite].[DateComptable],[dbo].[Comptabilite].[MontantMouvement]
+		FROM [dbo].[Comptabilite]
+		WHERE
+year(DateComptable)&gt;=2011 and year(DateComptable)&lt;=2013</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="9afa0a39-be7d-4560-9e5d-f7ce16d00c95">
+          <ID>SUP2014</ID>
+          <Name>SUP2014</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="03044795-0a91-47ba-8893-6086ad55c5d0">
+            <DataSourceID>DataWareHouseStock</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[Comptabilite].[id],[dbo].[Comptabilite].[CodeMouvement],[dbo].[Comptabilite].[NumeroMouvement],[dbo].[Comptabilite].[Nomenclature],[dbo].[Comptabilite].[NumeroProjet],[dbo].[Comptabilite].[CodeLivraison],[dbo].[Comptabilite].[CleGLDebiteur],[dbo].[Comptabilite].[cleGLCrediteur],[dbo].[Comptabilite].[DateMouvement],[dbo].[Comptabilite].[DateComptable],[dbo].[Comptabilite].[MontantMouvement]
+		FROM [dbo].[Comptabilite]
+		WHERE
+year(DateComptable)&gt;2013</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+      </Partitions>
+      <AggregationDesigns>
+        <AggregationDesign>
+          <ID>AggregationDesign</ID>
+          <Name>AggregationDesign</Name>
+          <CreatedTimestamp>2013-11-25T16:41:39Z</CreatedTimestamp>
+          <LastSchemaUpdate>2013-11-25T16:41:39Z</LastSchemaUpdate>
+          <EstimatedRows>289499</EstimatedRows>
+          <Dimensions>
+            <Dimension>
+              <CubeDimensionID>Comptabilite</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Id</AttributeID>
+                  <EstimatedCount>19911142</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Code Mouvement</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Numero Mouvement</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Code Livraison</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Cle GL Debiteur</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Cle GL Crediteur</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Nomenclature</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Numero Projet</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Article</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Nomenclature</AttributeID>
+                  <EstimatedCount>82281</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Numero Chapitre</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Unite Distribution</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Designation Succinte</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Etat Const Appro</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Periode Option</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Nomenclature Douaniere</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Duree Garantie</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Date Comptable</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Date Global</AttributeID>
+                  <EstimatedCount>6734</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Annee</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Mois</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Mois Lettre</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Trimestre</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Nom Jour</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Projet</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Numero Entier Projet</AttributeID>
+                  <EstimatedCount>1467</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Code Projet</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Numero Projet</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Imputation Projet</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Libelle1</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Libelle2</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Libelle3</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Date Mouvement</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Date Global</AttributeID>
+                  <EstimatedCount>6734</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Annee</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Mois</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Mois Lettre</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Trimestre</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Nom Jour</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+          </Dimensions>
+          <Aggregations>
+            <Aggregation>
+              <ID>Aggregation 0</ID>
+              <Name>Aggregation 0</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Comptabilite</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Article</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Comptable</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Projet</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Mouvement</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 1</ID>
+              <Name>Aggregation 1</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Comptabilite</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Article</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Comptable</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Projet</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Numero Entier Projet</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Mouvement</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 2</ID>
+              <Name>Aggregation 2</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Comptabilite</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Article</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Comptable</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Date Global</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Projet</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Mouvement</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 3</ID>
+              <Name>Aggregation 3</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Comptabilite</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Article</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Comptable</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Projet</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Mouvement</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Date Global</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 4</ID>
+              <Name>Aggregation 4</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Comptabilite</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Article</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Nomenclature</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Comptable</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Projet</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Mouvement</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+          </Aggregations>
+        </AggregationDesign>
+      </AggregationDesigns>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Prevision</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="5d9ba90b-46ee-407a-99e7-1fa44703376c">
+          <ID>Prevision</ID>
+          <Name>Prevision</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="6de30599-f231-4b7a-b8b6-bd841768c6ed">
+            <DataSourceViewID>Vue stock</DataSourceViewID>
+            <TableID>dbo_Prevision</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>175723</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+      </Partitions>
+      <AggregationDesigns>
+        <AggregationDesign>
+          <ID>AggregationDesign</ID>
+          <Name>AggregationDesign</Name>
+          <CreatedTimestamp>2013-11-26T23:39:30Z</CreatedTimestamp>
+          <LastSchemaUpdate>2013-11-26T23:39:30Z</LastSchemaUpdate>
+          <EstimatedRows>175723</EstimatedRows>
+          <Dimensions>
+            <Dimension>
+              <CubeDimensionID>Article</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Nomenclature</AttributeID>
+                  <EstimatedCount>82281</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Numero Chapitre</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Unite Distribution</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Designation Succinte</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Etat Const Appro</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Periode Option</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Nomenclature Douaniere</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Duree Garantie</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Type Prevision</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Code Type Prevision</AttributeID>
+                  <EstimatedCount>3</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Type Prévision</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Prevision</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Id</AttributeID>
+                  <EstimatedCount>175723</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Etablissement Mere</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Nomenclature</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Etablissement</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Code Etablissement</AttributeID>
+                  <EstimatedCount>7097</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Libelle Etablissement</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Code Direction</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+          </Dimensions>
+          <Aggregations>
+            <Aggregation>
+              <ID>Aggregation 0</ID>
+              <Name>Aggregation 0</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Article</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Type Prevision</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Code Type Prevision</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Prevision</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 1</ID>
+              <Name>Aggregation 1</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Article</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Type Prevision</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Code Type Prevision</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Prevision</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Code Etablissement</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 2</ID>
+              <Name>Aggregation 2</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Article</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Type Prevision</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Prevision</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 3</ID>
+              <Name>Aggregation 3</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Article</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Type Prevision</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Prevision</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Code Etablissement</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+          </Aggregations>
+        </AggregationDesign>
+      </AggregationDesigns>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Demande Stock</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="1f1f0c25-1e5f-478c-be16-da0412604b3f">
+          <ID>Demande Stock</ID>
+          <Name>Demande Stock</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="7477cee5-8067-4ed9-ad8e-aadba695e289">
+            <DataSourceViewID>Vue stock</DataSourceViewID>
+            <TableID>dbo_DemandeStock</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>169965</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+      </Partitions>
+      <AggregationDesigns>
+        <AggregationDesign>
+          <ID>AggregationDesign</ID>
+          <Name>AggregationDesign</Name>
+          <CreatedTimestamp>2013-11-26T23:40:17Z</CreatedTimestamp>
+          <LastSchemaUpdate>2013-11-26T23:40:17Z</LastSchemaUpdate>
+          <EstimatedRows>169965</EstimatedRows>
+          <Dimensions>
+            <Dimension>
+              <CubeDimensionID>Demande Stock</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Id Demande Stock</AttributeID>
+                  <EstimatedCount>169965</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Code Mouvement</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Numero DM</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Numero Tournee</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Code Etablissement</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Priorite Mouvement</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Numero Livraison</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Code Situation</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Magasin Stockeur</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Matricule Utlisateur</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Bureau Emetteur</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Terminal Emetteur</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Imputation Comptable</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Type Comptable</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Nature Comptable</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Ordre Execution</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Type DM</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Nature Consommation DM</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Numero Vehicule</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Reference Mouvement</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Numero Mouvement</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Motif Non Echelonne</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Numero BE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Mode Transport</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Numero Bon Transport</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Numero Wagon</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Code AO Commande</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Numero AO Commande</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Numero Projet</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Etablissement Demandeur</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Etablissement Mere</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Nomenclature</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Etablissement Destinataire</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Projet</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Numero Entier Projet</AttributeID>
+                  <EstimatedCount>1467</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Code Projet</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Numero Projet</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Imputation Projet</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Libelle1</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Libelle2</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Libelle3</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Etablissement Demandeur</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Code Etablissement</AttributeID>
+                  <EstimatedCount>7097</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Libelle Etablissement</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Code Direction</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Date Pre Taxation</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Date Global</AttributeID>
+                  <EstimatedCount>6734</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Annee</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Mois</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Mois Lettre</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Trimestre</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Nom Jour</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Date Retour Etablissement</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Date Global</AttributeID>
+                  <EstimatedCount>6734</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Annee</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Mois</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Mois Lettre</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Trimestre</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Nom Jour</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Date Comptable</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Date Global</AttributeID>
+                  <EstimatedCount>6734</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Annee</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Mois</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Mois Lettre</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Trimestre</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Nom Jour</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Date Expedition</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Date Global</AttributeID>
+                  <EstimatedCount>6734</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Annee</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Mois</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Mois Lettre</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Trimestre</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Nom Jour</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Date Taxation</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Date Global</AttributeID>
+                  <EstimatedCount>6734</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Annee</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Mois</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Mois Lettre</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Trimestre</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Nom Jour</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Etablissement Mere</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Code Etablissement</AttributeID>
+                  <EstimatedCount>7097</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Libelle Etablissement</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Code Direction</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Date AD</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Date Global</AttributeID>
+                  <EstimatedCount>6734</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Annee</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Mois</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Mois Lettre</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Trimestre</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Nom Jour</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Date Livraison Souhaitee</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Date Global</AttributeID>
+                  <EstimatedCount>6734</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Annee</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Mois</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Mois Lettre</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Trimestre</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Nom Jour</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Date Etablissement DM</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Date Global</AttributeID>
+                  <EstimatedCount>6734</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Annee</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Mois</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Mois Lettre</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Trimestre</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Nom Jour</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Date Tournee</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Date Global</AttributeID>
+                  <EstimatedCount>6734</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Annee</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Mois</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Mois Lettre</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Trimestre</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Nom Jour</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Article</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Nomenclature</AttributeID>
+                  <EstimatedCount>82281</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Numero Chapitre</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Unite Distribution</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Designation Succinte</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Etat Const Appro</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Periode Option</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Nomenclature Douaniere</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Duree Garantie</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Date Mise A Jour</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Date Global</AttributeID>
+                  <EstimatedCount>6734</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Annee</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Mois</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Mois Lettre</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Trimestre</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Nom Jour</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Etablissement Destinataire</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Code Etablissement</AttributeID>
+                  <EstimatedCount>7097</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Libelle Etablissement</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Code Direction</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+          </Dimensions>
+          <Aggregations>
+            <Aggregation>
+              <ID>Aggregation 0</ID>
+              <Name>Aggregation 0</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Demande Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Projet</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Demandeur</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Pre Taxation</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Retour Etablissement</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Comptable</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Expedition</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Taxation</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Mere</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date AD</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Livraison Souhaitee</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Etablissement DM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Tournee</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Article</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Mise A Jour</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Destinataire</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 1</ID>
+              <Name>Aggregation 1</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Demande Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Projet</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Numero Entier Projet</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Demandeur</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Pre Taxation</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Retour Etablissement</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Comptable</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Expedition</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Taxation</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Mere</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date AD</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Livraison Souhaitee</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Etablissement DM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Tournee</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Article</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Mise A Jour</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Destinataire</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 2</ID>
+              <Name>Aggregation 2</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Demande Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Projet</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Demandeur</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Pre Taxation</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Retour Etablissement</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Comptable</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Expedition</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Taxation</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Mere</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date AD</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Livraison Souhaitee</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Etablissement DM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Date Global</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Tournee</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Article</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Mise A Jour</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Destinataire</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 3</ID>
+              <Name>Aggregation 3</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Demande Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Projet</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Demandeur</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Pre Taxation</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Retour Etablissement</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Comptable</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Expedition</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Taxation</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Mere</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date AD</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Livraison Souhaitee</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Etablissement DM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Tournee</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Date Global</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Article</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Mise A Jour</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Destinataire</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 4</ID>
+              <Name>Aggregation 4</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Demande Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Projet</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Demandeur</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Pre Taxation</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Retour Etablissement</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Comptable</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Expedition</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Taxation</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Mere</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date AD</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Livraison Souhaitee</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Etablissement DM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Tournee</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Article</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Mise A Jour</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Date Global</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Destinataire</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 5</ID>
+              <Name>Aggregation 5</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Demande Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Projet</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Demandeur</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Pre Taxation</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Date Global</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Retour Etablissement</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Comptable</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Expedition</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Taxation</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Mere</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date AD</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Livraison Souhaitee</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Etablissement DM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Tournee</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Article</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Mise A Jour</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Destinataire</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 6</ID>
+              <Name>Aggregation 6</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Demande Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Projet</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Demandeur</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Pre Taxation</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Retour Etablissement</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Date Global</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Comptable</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Expedition</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Taxation</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Mere</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date AD</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Livraison Souhaitee</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Etablissement DM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Tournee</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Article</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Mise A Jour</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Destinataire</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 7</ID>
+              <Name>Aggregation 7</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Demande Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Projet</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Demandeur</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Pre Taxation</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Retour Etablissement</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Comptable</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Date Global</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Expedition</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Taxation</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Mere</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date AD</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Livraison Souhaitee</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Etablissement DM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Tournee</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Article</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Mise A Jour</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Destinataire</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 8</ID>
+              <Name>Aggregation 8</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Demande Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Projet</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Demandeur</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Pre Taxation</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Retour Etablissement</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Comptable</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Expedition</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Date Global</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Taxation</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Mere</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date AD</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Livraison Souhaitee</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Etablissement DM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Tournee</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Article</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Mise A Jour</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Destinataire</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 9</ID>
+              <Name>Aggregation 9</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Demande Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Projet</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Demandeur</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Pre Taxation</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Retour Etablissement</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Comptable</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Expedition</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Taxation</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Date Global</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Mere</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date AD</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Livraison Souhaitee</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Etablissement DM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Tournee</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Article</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Mise A Jour</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Destinataire</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation a</ID>
+              <Name>Aggregation a</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Demande Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Projet</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Demandeur</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Pre Taxation</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Retour Etablissement</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Comptable</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Expedition</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Taxation</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Mere</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date AD</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Date Global</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Livraison Souhaitee</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Etablissement DM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Tournee</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Article</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Mise A Jour</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Destinataire</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation b</ID>
+              <Name>Aggregation b</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Demande Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Projet</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Demandeur</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Pre Taxation</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Retour Etablissement</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Comptable</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Expedition</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Taxation</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Mere</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date AD</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Livraison Souhaitee</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Date Global</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Etablissement DM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Tournee</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Article</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Mise A Jour</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Destinataire</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation c</ID>
+              <Name>Aggregation c</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Demande Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Projet</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Demandeur</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Pre Taxation</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Retour Etablissement</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Comptable</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Expedition</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Taxation</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Mere</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date AD</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Livraison Souhaitee</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Etablissement DM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Tournee</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Article</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Mise A Jour</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Destinataire</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Code Etablissement</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation d</ID>
+              <Name>Aggregation d</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Demande Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Projet</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Demandeur</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Code Etablissement</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Pre Taxation</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Retour Etablissement</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Comptable</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Expedition</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Taxation</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Mere</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date AD</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Livraison Souhaitee</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Etablissement DM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Tournee</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Article</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Mise A Jour</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Destinataire</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation e</ID>
+              <Name>Aggregation e</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Demande Stock</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Projet</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Demandeur</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Pre Taxation</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Retour Etablissement</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Comptable</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Expedition</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Taxation</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Mere</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Code Etablissement</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date AD</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Livraison Souhaitee</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Etablissement DM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Tournee</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Article</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Date Mise A Jour</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Etablissement Destinataire</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+          </Aggregations>
+        </AggregationDesign>
+      </AggregationDesigns>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

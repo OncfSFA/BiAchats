@@ -1,0 +1,194 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="4f9df5e0-8bf9-4b63-878a-7ab1975db5f9" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Commande Par Article</ID>
+  <Name>Commande Par Article</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1263" scrolltop="-4630" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="6879" y="5265" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="CommandeParArticle" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4313" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000d910000043110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_CommandeParArticle" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1263</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4630</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="574a733e-1df3-49de-949e-07f1a5947263">
+    <DataSourceViewID>Vue stock</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="3e2a1e27-8e85-4a72-962a-9b7ecd40bcc0">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="4dbe7962-1ec5-42fa-9307-6a949db57aea">
+      <ID>Id</ID>
+      <Name>Id</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>21854</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6d5ccb74-71d1-432d-b615-c4f8af184b8b">
+          <NullProcessing>UnknownMember</NullProcessing>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="be52b894-de59-4ab9-9460-b225285e9f4f">
+            <TableID>dbo_CommandeParArticle</TableID>
+            <ColumnID>id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="48e1d0cc-f4dc-43c6-921d-2988c131ee27">
+          <AttributeID>Numero Commande</AttributeID>
+          <Name>Numero Commande</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1160b6d4-58ce-4308-bb27-542b9cb172d4">
+          <AttributeID>Code Fournisseur</AttributeID>
+          <Name>Code Fournisseur</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6eb2cf86-da45-4fcc-9b64-f0c19422ae1e">
+          <AttributeID>Situation Commande</AttributeID>
+          <Name>Situation Commande</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9151a30d-89a9-478d-a7cd-6e1a64b244fd">
+          <AttributeID>Subdivision Section</AttributeID>
+          <Name>Subdivision Section</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="56a388c6-27c6-44e8-ad76-52c64210210c">
+          <AttributeID>Motif Situation Commande</AttributeID>
+          <Name>Motif Situation Commande</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="1d7a13d5-5381-44b9-ac29-5417e87b0161">
+      <ID>Numero Commande</ID>
+      <Name>Numero Commande</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="26168a08-1dd8-4e6d-8c90-2e87b3a9cbaf">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="12b7f365-a40e-43e5-9c2b-19322db7231e">
+            <TableID>dbo_CommandeParArticle</TableID>
+            <ColumnID>numeroCommande</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="537f2ffb-78d7-405f-9cb8-97d318ea7499">
+      <ID>Code Fournisseur</ID>
+      <Name>Code Fournisseur</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c33c2af4-8ed8-4c16-873a-7ceb2b7b9530">
+          <DataType>WChar</DataType>
+          <DataSize>7</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fa092de1-4b56-4014-8611-73e91c10fe81">
+            <TableID>dbo_CommandeParArticle</TableID>
+            <ColumnID>codeFournisseur</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="d4c55bb6-ef93-43d6-a99b-796b5ad15ee4">
+      <ID>Situation Commande</ID>
+      <Name>Situation Commande</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0128a1e4-1911-4b47-8e57-cfd3bbac8b19">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="055f5f15-cf5c-4351-9b2b-c563ca14a3c3">
+            <TableID>dbo_CommandeParArticle</TableID>
+            <ColumnID>situationCommande</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="8dced9ef-8911-4568-aaea-62ab7294d04f">
+      <ID>Subdivision Section</ID>
+      <Name>Subdivision Section</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6080e40b-ece2-49d3-a057-82a622ae6974">
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="97dbe815-448b-484a-b843-1fe21f4fcf32">
+            <TableID>dbo_CommandeParArticle</TableID>
+            <ColumnID>SubdivisionSection</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="cdb71385-3636-468c-8ef8-edb47e78a199">
+      <ID>Motif Situation Commande</ID>
+      <Name>Motif Situation Commande</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="06de768c-fd93-4a89-82c2-314aea81b5fe">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4b2ef292-d7a7-4c04-a8a6-f320bdf1ba7d">
+            <TableID>dbo_CommandeParArticle</TableID>
+            <ColumnID>MotifSituationCommande</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+  </Attributes>
+</Dimension>

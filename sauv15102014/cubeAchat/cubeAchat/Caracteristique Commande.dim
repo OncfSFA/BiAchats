@@ -1,0 +1,283 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="2647dc5e-c692-438d-a5e6-ed4e33dcbbc9" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Caracteristique Commande</ID>
+  <Name>Caracteristique Commande</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1660" scrolltop="-4339" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10636" y="13679" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="CaracteristiqueCommande" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="5873" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000f116000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_CaracteristiqueCommande" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1660</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4339</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="dac7e062-bfe3-4221-8875-9fbeb9f96ebe">
+    <DataSourceViewID>Vue stock</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="7ae60fb7-b4ea-4c34-9e29-8b6be28fab3a">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="e5c31cb9-3514-486c-b476-a1385982d4d5">
+      <ID>Id</ID>
+      <Name>Id</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>720</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2322a49c-7ec0-469c-8edf-66ee058c88a1">
+          <NullProcessing>UnknownMember</NullProcessing>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bec6fd6b-70ba-4702-9c22-b7ea351967a1">
+            <TableID>dbo_CaracteristiqueCommande</TableID>
+            <ColumnID>id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="6d64d5e8-a837-4023-b3bf-de27b9862dc2">
+          <AttributeID>Codecondition Valeur Offre</AttributeID>
+          <Name>Code Condition Valeur Offre</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="63ba9f70-dd91-4e23-b9a7-89f8c4732dfa">
+          <AttributeID>Libellecondition Valeur Offre</AttributeID>
+          <Name>Libelle Condition Valeur Offre</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="56cc93bb-ac36-4ec9-8964-70da9ad6c45c">
+          <AttributeID>Code Emballage</AttributeID>
+          <Name>Code Emballage</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="71883031-bb09-4190-ab1e-d016714dcf7f">
+          <AttributeID>Libelle Emballage</AttributeID>
+          <Name>Libelle Emballage</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="80d69853-021f-4730-b1cc-b16860cbdb11">
+          <AttributeID>Code Caution</AttributeID>
+          <Name>Code Caution</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="06cb923a-5c7e-4593-acda-b7dfc2de577d">
+          <AttributeID>Libelle Caution</AttributeID>
+          <Name>Libelle Caution</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="37eca156-335e-4349-9b38-b8f0759c0d39">
+          <AttributeID>Code Condition Remise</AttributeID>
+          <Name>Code Condition Remise</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="890f8513-0a3f-4249-a29e-6f437c6b2a51">
+          <AttributeID>Libelle Condition Remise</AttributeID>
+          <Name>Libelle Condition Remise</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ed93b7ed-b94c-416a-a81d-3c10ea979bb6">
+          <AttributeID>Code Prix Ferme Revision</AttributeID>
+          <Name>Code Prix Ferme Revision</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="59c4f5aa-1781-49b2-b1df-d2fa304ccda0">
+          <AttributeID>Libelle Prix Ferme Revision</AttributeID>
+          <Name>Libelle Prix Ferme Revision</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+    </Attribute>
+    <Attribute dwd:design-time-name="feb648a5-171b-40f3-854d-4bd7edee88b5">
+      <ID>Codecondition Valeur Offre</ID>
+      <Name>Code Condition Valeur Offre</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="65480da9-f279-47c5-8c6a-10b21f293bf9">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6eff416a-8fd7-4bbf-ad10-5b2b88252097">
+            <TableID>dbo_CaracteristiqueCommande</TableID>
+            <ColumnID>codeconditionValeurOffre</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Attribute>
+    <Attribute dwd:design-time-name="4db61eb4-7164-45d2-a15e-6e306ffba326">
+      <ID>Libellecondition Valeur Offre</ID>
+      <Name>Libelle Condition Valeur Offre</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="69a24bd7-0d55-42de-9d0e-d4c392fc942d">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="742225de-de66-4d6f-847b-9789516d191b">
+            <TableID>dbo_CaracteristiqueCommande</TableID>
+            <ColumnID>libelleconditionValeurOffre</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Attribute>
+    <Attribute dwd:design-time-name="f52d229a-fa05-41c6-955e-e39d34c6ae13">
+      <ID>Code Emballage</ID>
+      <Name>Code Emballage</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3dc215be-03bd-4bdb-9f40-ecce5d4907ae">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7f7f789e-869b-4d2c-beb2-0cda11830c2e">
+            <TableID>dbo_CaracteristiqueCommande</TableID>
+            <ColumnID>codeEmballage</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Attribute>
+    <Attribute dwd:design-time-name="7d3fb0b9-588d-4e09-a76c-6cbe56830752">
+      <ID>Libelle Emballage</ID>
+      <Name>Libelle Emballage</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b19f8c49-2c18-43be-b5f9-9d13f59e9f4c">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a59af48a-6dcd-4eaa-80b9-28c58f15bb39">
+            <TableID>dbo_CaracteristiqueCommande</TableID>
+            <ColumnID>libelleEmballage</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Attribute>
+    <Attribute dwd:design-time-name="f6ed3bf4-0f90-4723-b5b1-ff3b33be0ed8">
+      <ID>Code Caution</ID>
+      <Name>Code Caution</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3b345db2-4576-4604-ba11-d63f5b374f2c">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5df8b640-140c-4ea5-82bf-52e7c4c3c82c">
+            <TableID>dbo_CaracteristiqueCommande</TableID>
+            <ColumnID>codeCaution</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Attribute>
+    <Attribute dwd:design-time-name="ebf0dd07-eeba-477a-ac59-1d24be7646c7">
+      <ID>Libelle Caution</ID>
+      <Name>Libelle Caution</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="33ea36dd-90bd-40aa-b77a-3c4187e87c3a">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a2ddd8ae-08cb-46a3-bcb1-3e23dfe34507">
+            <TableID>dbo_CaracteristiqueCommande</TableID>
+            <ColumnID>libelleCaution</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Attribute>
+    <Attribute dwd:design-time-name="1ffa3ebc-95a5-49ea-af10-38d84df5a764">
+      <ID>Code Condition Remise</ID>
+      <Name>Code Condition Remise</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="67ef0858-9e70-49cb-84bf-3594f6183e86">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5f8711b0-b702-4f9a-9aec-fafe02f32625">
+            <TableID>dbo_CaracteristiqueCommande</TableID>
+            <ColumnID>codeConditionRemise</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Attribute>
+    <Attribute dwd:design-time-name="59e747b8-9e48-4a4a-960e-9ff50d0a977b">
+      <ID>Libelle Condition Remise</ID>
+      <Name>Libelle Condition Remise</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d274f2d3-00ae-4b99-b116-71a20247777c">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0254df3b-d90c-450e-8aab-fa23cace1a96">
+            <TableID>dbo_CaracteristiqueCommande</TableID>
+            <ColumnID>libelleConditionRemise</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Attribute>
+    <Attribute dwd:design-time-name="485a5036-75d6-473a-a953-388ffb394a1b">
+      <ID>Code Prix Ferme Revision</ID>
+      <Name>Code Prix Ferme Revision</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="856f3194-fe48-4393-9a7c-87069e8e6686">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1fde89d9-c356-4adb-9a7c-0c0226099341">
+            <TableID>dbo_CaracteristiqueCommande</TableID>
+            <ColumnID>codePrixFermeRevision</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Attribute>
+    <Attribute dwd:design-time-name="990ec7ef-9983-404f-b84c-3bf4d5db541a">
+      <ID>Libelle Prix Ferme Revision</ID>
+      <Name>Libelle Prix Ferme Revision</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e3ea8d17-b752-490e-8228-27b8ad11a448">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b3f6f362-08ec-4696-85a6-1f778a05ff13">
+            <TableID>dbo_CaracteristiqueCommande</TableID>
+            <ColumnID>libellePrixFermeRevision</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Attribute>
+  </Attributes>
+</Dimension>
